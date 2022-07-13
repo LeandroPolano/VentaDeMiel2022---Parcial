@@ -74,20 +74,20 @@ namespace VentaDeMiel2022.Windows.Helpers
             // 
             // TipoDeDocumentoTextBox
             // 
-            this.TipoDeDocumentoTextBox.Location = new System.Drawing.Point(178, 66);
+            this.TipoDeDocumentoTextBox.Location = new System.Drawing.Point(236, 69);
             this.TipoDeDocumentoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TipoDeDocumentoTextBox.MaxLength = 120;
             this.TipoDeDocumentoTextBox.Name = "TipoDeDocumentoTextBox";
-            this.TipoDeDocumentoTextBox.Size = new System.Drawing.Size(349, 22);
+            this.TipoDeDocumentoTextBox.Size = new System.Drawing.Size(291, 29);
             this.TipoDeDocumentoTextBox.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 66);
+            this.label1.Location = new System.Drawing.Point(46, 72);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 17);
+            this.label1.Size = new System.Drawing.Size(182, 23);
             this.label1.TabIndex = 11;
             this.label1.Text = "Tipo de Documento:";
             // 
@@ -104,6 +104,7 @@ namespace VentaDeMiel2022.Windows.Helpers
             this.Controls.Add(this.GuardarIconButton);
             this.Controls.Add(this.TipoDeDocumentoTextBox);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmTiposDeDocumentosAE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmTiposDeDocumentosAE_Load);

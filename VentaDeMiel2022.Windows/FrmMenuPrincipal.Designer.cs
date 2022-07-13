@@ -66,8 +66,8 @@ namespace VentaDeMiel2022.Windows
             this.splitContainer1.Panel2.Controls.Add(this.PaisButton);
             this.splitContainer1.Panel2.Controls.Add(this.ClientesButton);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(504, 524);
-            this.splitContainer1.SplitterDistance = 68;
+            this.splitContainer1.Size = new System.Drawing.Size(516, 536);
+            this.splitContainer1.SplitterDistance = 69;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -79,7 +79,7 @@ namespace VentaDeMiel2022.Windows
             this.label1.Location = new System.Drawing.Point(-8, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(512, 68);
+            this.label1.Size = new System.Drawing.Size(524, 68);
             this.label1.TabIndex = 0;
             this.label1.Text = "Venta De Miel";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -180,9 +180,14 @@ namespace VentaDeMiel2022.Windows
             // FrmMenuPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(504, 524);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximumSize = new System.Drawing.Size(522, 542);
+            this.MinimumSize = new System.Drawing.Size(522, 542);
             this.Name = "FrmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);

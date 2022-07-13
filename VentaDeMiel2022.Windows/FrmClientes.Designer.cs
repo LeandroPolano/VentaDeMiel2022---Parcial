@@ -29,19 +29,19 @@ namespace VentaDeMiel2022.Windows
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PrecioDescIconButton = new FontAwesome.Sharp.IconButton();
             this.OredenarAZPorProductoiconButton = new FontAwesome.Sharp.IconButton();
             this.FiltrariconButton = new FontAwesome.Sharp.IconButton();
@@ -196,18 +196,18 @@ namespace VentaDeMiel2022.Windows
             // 
             this.DatosDataGridView.AllowUserToAddRows = false;
             this.DatosDataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DatosDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DatosDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DatosDataGridView.BackgroundColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DatosDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 10.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DatosDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DatosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DatosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNombre,
@@ -237,8 +237,8 @@ namespace VentaDeMiel2022.Windows
             // colNombre
             // 
             this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colNombre.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colNombre.DefaultCellStyle = dataGridViewCellStyle3;
             this.colNombre.HeaderText = "Nombre";
             this.colNombre.MinimumWidth = 6;
             this.colNombre.Name = "colNombre";
@@ -248,8 +248,8 @@ namespace VentaDeMiel2022.Windows
             // colApellido
             // 
             this.colApellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colApellido.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colApellido.DefaultCellStyle = dataGridViewCellStyle4;
             this.colApellido.HeaderText = "Apellido";
             this.colApellido.MinimumWidth = 6;
             this.colApellido.Name = "colApellido";
@@ -258,8 +258,8 @@ namespace VentaDeMiel2022.Windows
             // 
             // colTipoDeDocumento
             // 
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colTipoDeDocumento.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colTipoDeDocumento.DefaultCellStyle = dataGridViewCellStyle5;
             this.colTipoDeDocumento.HeaderText = "TipoDeDocumento";
             this.colTipoDeDocumento.MinimumWidth = 6;
             this.colTipoDeDocumento.Name = "colTipoDeDocumento";
@@ -270,8 +270,8 @@ namespace VentaDeMiel2022.Windows
             // colNroDocumento
             // 
             this.colNroDocumento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colNroDocumento.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colNroDocumento.DefaultCellStyle = dataGridViewCellStyle6;
             this.colNroDocumento.HeaderText = "Numero de documento";
             this.colNroDocumento.MinimumWidth = 6;
             this.colNroDocumento.Name = "colNroDocumento";
@@ -281,8 +281,8 @@ namespace VentaDeMiel2022.Windows
             // colDireccion
             // 
             this.colDireccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colDireccion.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colDireccion.DefaultCellStyle = dataGridViewCellStyle7;
             this.colDireccion.HeaderText = "Direccion";
             this.colDireccion.MinimumWidth = 6;
             this.colDireccion.Name = "colDireccion";
@@ -292,8 +292,8 @@ namespace VentaDeMiel2022.Windows
             // colLocalidad
             // 
             this.colLocalidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colLocalidad.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colLocalidad.DefaultCellStyle = dataGridViewCellStyle8;
             this.colLocalidad.HeaderText = "Localidad";
             this.colLocalidad.MinimumWidth = 6;
             this.colLocalidad.Name = "colLocalidad";
@@ -303,8 +303,8 @@ namespace VentaDeMiel2022.Windows
             // colProvincia
             // 
             this.colProvincia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colProvincia.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colProvincia.DefaultCellStyle = dataGridViewCellStyle9;
             this.colProvincia.HeaderText = "Provincia";
             this.colProvincia.MinimumWidth = 6;
             this.colProvincia.Name = "colProvincia";
@@ -314,8 +314,8 @@ namespace VentaDeMiel2022.Windows
             // colPais
             // 
             this.colPais.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colPais.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colPais.DefaultCellStyle = dataGridViewCellStyle10;
             this.colPais.HeaderText = "Pais";
             this.colPais.MinimumWidth = 6;
             this.colPais.Name = "colPais";
@@ -325,8 +325,8 @@ namespace VentaDeMiel2022.Windows
             // colTelefonoFijo
             // 
             this.colTelefonoFijo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colTelefonoFijo.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colTelefonoFijo.DefaultCellStyle = dataGridViewCellStyle11;
             this.colTelefonoFijo.HeaderText = "Telefono Fijo";
             this.colTelefonoFijo.MinimumWidth = 6;
             this.colTelefonoFijo.Name = "colTelefonoFijo";
@@ -336,8 +336,8 @@ namespace VentaDeMiel2022.Windows
             // colTelefonoMovil
             // 
             this.colTelefonoMovil.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colTelefonoMovil.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colTelefonoMovil.DefaultCellStyle = dataGridViewCellStyle12;
             this.colTelefonoMovil.HeaderText = "Telefono Movil";
             this.colTelefonoMovil.MinimumWidth = 6;
             this.colTelefonoMovil.Name = "colTelefonoMovil";
@@ -347,8 +347,8 @@ namespace VentaDeMiel2022.Windows
             // colCorreoElectronico
             // 
             this.colCorreoElectronico.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colCorreoElectronico.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colCorreoElectronico.DefaultCellStyle = dataGridViewCellStyle13;
             this.colCorreoElectronico.HeaderText = "Correo Electronico";
             this.colCorreoElectronico.MinimumWidth = 6;
             this.colCorreoElectronico.Name = "colCorreoElectronico";
@@ -361,6 +361,7 @@ namespace VentaDeMiel2022.Windows
             this.ClientSize = new System.Drawing.Size(1804, 539);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmClientes_Load);

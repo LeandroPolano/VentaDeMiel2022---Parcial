@@ -45,7 +45,7 @@ namespace VentaDeMiel2022.Windows
             this.PaisComboBox.Location = new System.Drawing.Point(137, 81);
             this.PaisComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.PaisComboBox.Name = "PaisComboBox";
-            this.PaisComboBox.Size = new System.Drawing.Size(428, 24);
+            this.PaisComboBox.Size = new System.Drawing.Size(428, 30);
             this.PaisComboBox.TabIndex = 26;
             this.PaisComboBox.SelectedIndexChanged += new System.EventHandler(this.TipoProductosComboBox_SelectedIndexChanged);
             // 
@@ -109,6 +109,7 @@ namespace VentaDeMiel2022.Windows
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CancelarIconButton);
             this.Controls.Add(this.OKIconButton);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmBuscarPorPais";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmBuscarPorPais_Load);

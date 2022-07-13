@@ -45,7 +45,7 @@ namespace VentaDeMiel2022.Windows
             this.ProvinciaComboBox.Location = new System.Drawing.Point(154, 84);
             this.ProvinciaComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.ProvinciaComboBox.Name = "ProvinciaComboBox";
-            this.ProvinciaComboBox.Size = new System.Drawing.Size(406, 24);
+            this.ProvinciaComboBox.Size = new System.Drawing.Size(406, 30);
             this.ProvinciaComboBox.TabIndex = 30;
             this.ProvinciaComboBox.SelectedIndexChanged += new System.EventHandler(this.ProvinciaComboBox_SelectedIndexChanged_1);
             // 
@@ -109,6 +109,7 @@ namespace VentaDeMiel2022.Windows
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CancelarIconButton);
             this.Controls.Add(this.OKIconButton);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmBuscarPorProvincia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmBuscarPorProvincia_Load_1);

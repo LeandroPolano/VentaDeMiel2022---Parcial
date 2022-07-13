@@ -40,21 +40,22 @@ namespace VentaDeMiel2022.Windows
             // 
             // PaisTextBox
             // 
+            this.PaisTextBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.PaisTextBox.Location = new System.Drawing.Point(111, 68);
             this.PaisTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PaisTextBox.MaxLength = 120;
             this.PaisTextBox.Name = "PaisTextBox";
-            this.PaisTextBox.Size = new System.Drawing.Size(349, 22);
+            this.PaisTextBox.Size = new System.Drawing.Size(349, 29);
             this.PaisTextBox.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.label1.Location = new System.Drawing.Point(56, 68);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 20);
+            this.label1.Size = new System.Drawing.Size(49, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "Pais:";
             // 
@@ -91,6 +92,7 @@ namespace VentaDeMiel2022.Windows
             this.Controls.Add(this.GuardarIconButton);
             this.Controls.Add(this.PaisTextBox);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmPaisAE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

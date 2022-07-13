@@ -66,7 +66,7 @@ namespace VentaDeMiel2022.Windows
             this.DatosDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 10.8F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -218,7 +218,7 @@ namespace VentaDeMiel2022.Windows
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 10.8F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -257,6 +257,7 @@ namespace VentaDeMiel2022.Windows
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer2);
             this.Controls.Add(this.splitContainer1);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmTipoEnvase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.TipoEnvase_Load);

@@ -66,7 +66,7 @@ namespace VentaDeMiel2022.Windows
             this.NroDocumentoTextBox.MaxLength = 120;
             this.NroDocumentoTextBox.Name = "NroDocumentoTextBox";
             this.NroDocumentoTextBox.Size = new System.Drawing.Size(277, 29);
-            this.NroDocumentoTextBox.TabIndex = 22;
+            this.NroDocumentoTextBox.TabIndex = 3;
             // 
             // label1
             // 
@@ -101,7 +101,7 @@ namespace VentaDeMiel2022.Windows
             this.TipoDeDocumentoComboBox.Location = new System.Drawing.Point(17, 152);
             this.TipoDeDocumentoComboBox.Name = "TipoDeDocumentoComboBox";
             this.TipoDeDocumentoComboBox.Size = new System.Drawing.Size(277, 30);
-            this.TipoDeDocumentoComboBox.TabIndex = 25;
+            this.TipoDeDocumentoComboBox.TabIndex = 2;
             // 
             // ApellidoTextBox
             // 
@@ -111,7 +111,7 @@ namespace VentaDeMiel2022.Windows
             this.ApellidoTextBox.MaxLength = 120;
             this.ApellidoTextBox.Name = "ApellidoTextBox";
             this.ApellidoTextBox.Size = new System.Drawing.Size(277, 29);
-            this.ApellidoTextBox.TabIndex = 28;
+            this.ApellidoTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -142,7 +142,7 @@ namespace VentaDeMiel2022.Windows
             this.PaisComboBox.Location = new System.Drawing.Point(17, 449);
             this.PaisComboBox.Name = "PaisComboBox";
             this.PaisComboBox.Size = new System.Drawing.Size(277, 30);
-            this.PaisComboBox.TabIndex = 29;
+            this.PaisComboBox.TabIndex = 7;
             // 
             // CorreoElectronicoTextBox
             // 
@@ -152,7 +152,7 @@ namespace VentaDeMiel2022.Windows
             this.CorreoElectronicoTextBox.MaxLength = 120;
             this.CorreoElectronicoTextBox.Name = "CorreoElectronicoTextBox";
             this.CorreoElectronicoTextBox.Size = new System.Drawing.Size(277, 29);
-            this.CorreoElectronicoTextBox.TabIndex = 32;
+            this.CorreoElectronicoTextBox.TabIndex = 10;
             // 
             // label5
             // 
@@ -184,7 +184,7 @@ namespace VentaDeMiel2022.Windows
             this.DireccionTextBox.MaxLength = 120;
             this.DireccionTextBox.Name = "DireccionTextBox";
             this.DireccionTextBox.Size = new System.Drawing.Size(277, 29);
-            this.DireccionTextBox.TabIndex = 36;
+            this.DireccionTextBox.TabIndex = 4;
             // 
             // label7
             // 
@@ -215,7 +215,7 @@ namespace VentaDeMiel2022.Windows
             this.ProvinciaComboBox.Location = new System.Drawing.Point(17, 390);
             this.ProvinciaComboBox.Name = "ProvinciaComboBox";
             this.ProvinciaComboBox.Size = new System.Drawing.Size(277, 30);
-            this.ProvinciaComboBox.TabIndex = 37;
+            this.ProvinciaComboBox.TabIndex = 6;
             // 
             // TelefonoFijoTextBox
             // 
@@ -225,7 +225,7 @@ namespace VentaDeMiel2022.Windows
             this.TelefonoFijoTextBox.MaxLength = 120;
             this.TelefonoFijoTextBox.Name = "TelefonoFijoTextBox";
             this.TelefonoFijoTextBox.Size = new System.Drawing.Size(277, 29);
-            this.TelefonoFijoTextBox.TabIndex = 40;
+            this.TelefonoFijoTextBox.TabIndex = 8;
             // 
             // label9
             // 
@@ -256,7 +256,7 @@ namespace VentaDeMiel2022.Windows
             this.LocalidadComboBox.Location = new System.Drawing.Point(17, 331);
             this.LocalidadComboBox.Name = "LocalidadComboBox";
             this.LocalidadComboBox.Size = new System.Drawing.Size(277, 30);
-            this.LocalidadComboBox.TabIndex = 41;
+            this.LocalidadComboBox.TabIndex = 5;
             // 
             // NombreTextBox
             // 
@@ -266,7 +266,7 @@ namespace VentaDeMiel2022.Windows
             this.NombreTextBox.MaxLength = 120;
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(277, 29);
-            this.NombreTextBox.TabIndex = 43;
+            this.NombreTextBox.TabIndex = 0;
             // 
             // label11
             // 
@@ -287,7 +287,7 @@ namespace VentaDeMiel2022.Windows
             this.TelefonoMovilTextBox.MaxLength = 120;
             this.TelefonoMovilTextBox.Name = "TelefonoMovilTextBox";
             this.TelefonoMovilTextBox.Size = new System.Drawing.Size(277, 29);
-            this.TelefonoMovilTextBox.TabIndex = 45;
+            this.TelefonoMovilTextBox.TabIndex = 9;
             // 
             // iconButton1
             // 
@@ -301,7 +301,7 @@ namespace VentaDeMiel2022.Windows
             this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(161, 97);
-            this.iconButton1.TabIndex = 46;
+            this.iconButton1.TabIndex = 12;
             this.iconButton1.Text = "Cancelar";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
@@ -319,7 +319,7 @@ namespace VentaDeMiel2022.Windows
             this.OKIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.OKIconButton.Name = "OKIconButton";
             this.OKIconButton.Size = new System.Drawing.Size(161, 97);
-            this.OKIconButton.TabIndex = 47;
+            this.OKIconButton.TabIndex = 11;
             this.OKIconButton.Text = "OK";
             this.OKIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.OKIconButton.UseVisualStyleBackColor = false;
@@ -354,6 +354,7 @@ namespace VentaDeMiel2022.Windows
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TipoDeDocumentoComboBox);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmClienteAE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

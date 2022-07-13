@@ -42,22 +42,23 @@ namespace VentaDeMiel2022.Windows
             // 
             // ProvinciaTextBox
             // 
+            this.ProvinciaTextBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.ProvinciaTextBox.Location = new System.Drawing.Point(118, 42);
             this.ProvinciaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ProvinciaTextBox.MaxLength = 120;
             this.ProvinciaTextBox.Name = "ProvinciaTextBox";
-            this.ProvinciaTextBox.Size = new System.Drawing.Size(349, 22);
+            this.ProvinciaTextBox.Size = new System.Drawing.Size(349, 29);
             this.ProvinciaTextBox.TabIndex = 10;
             this.ProvinciaTextBox.TextChanged += new System.EventHandler(this.ProvinciaTextBox_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.label1.Location = new System.Drawing.Point(27, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 20);
+            this.label1.Size = new System.Drawing.Size(91, 23);
             this.label1.TabIndex = 9;
             this.label1.Text = "Provincia:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -88,21 +89,22 @@ namespace VentaDeMiel2022.Windows
             // 
             // PaisComboBox
             // 
+            this.PaisComboBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.PaisComboBox.FormattingEnabled = true;
             this.PaisComboBox.Location = new System.Drawing.Point(118, 91);
             this.PaisComboBox.Name = "PaisComboBox";
-            this.PaisComboBox.Size = new System.Drawing.Size(349, 24);
+            this.PaisComboBox.Size = new System.Drawing.Size(349, 30);
             this.PaisComboBox.TabIndex = 13;
             this.PaisComboBox.SelectedIndexChanged += new System.EventHandler(this.PaisComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.label2.Location = new System.Drawing.Point(63, 91);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 20);
+            this.label2.Size = new System.Drawing.Size(49, 23);
             this.label2.TabIndex = 14;
             this.label2.Text = "Pais:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -118,6 +120,7 @@ namespace VentaDeMiel2022.Windows
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CancelarIconButton);
             this.Controls.Add(this.GuardarIconButton);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmProvinciaAE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmProvinciaAE_Load);

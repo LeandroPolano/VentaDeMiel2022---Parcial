@@ -74,20 +74,22 @@ namespace VentaDeMiel2022.Windows
             // 
             // TipoEnvaseTextBox
             // 
+            this.TipoEnvaseTextBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.TipoEnvaseTextBox.Location = new System.Drawing.Point(193, 63);
             this.TipoEnvaseTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TipoEnvaseTextBox.MaxLength = 120;
             this.TipoEnvaseTextBox.Name = "TipoEnvaseTextBox";
-            this.TipoEnvaseTextBox.Size = new System.Drawing.Size(349, 22);
+            this.TipoEnvaseTextBox.Size = new System.Drawing.Size(349, 29);
             this.TipoEnvaseTextBox.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 67);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10.8F);
+            this.label1.Location = new System.Drawing.Point(40, 66);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 17);
+            this.label1.Size = new System.Drawing.Size(145, 23);
             this.label1.TabIndex = 7;
             this.label1.Text = "Tipo de Envase:";
             // 
@@ -104,6 +106,7 @@ namespace VentaDeMiel2022.Windows
             this.Controls.Add(this.GuardarIconButton);
             this.Controls.Add(this.TipoEnvaseTextBox);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmTipoEnvaseAE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
