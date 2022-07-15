@@ -12,7 +12,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
         private readonly VentaDeMiel2022DbContext context;
 
 
-        public RepositorioPaises()
+        public RepositorioPaises(VentaDeMiel2022DbContext ventaDeMiel2022DbContext)
         {
             context = new VentaDeMiel2022DbContext();
         }

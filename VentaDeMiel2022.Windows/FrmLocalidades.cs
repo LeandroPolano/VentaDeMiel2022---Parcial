@@ -40,9 +40,10 @@ namespace VentaDeMiel2022.Windows
                 if (!servicio.Existe(localidad))
                 {
                     servicio.Guardar(localidad);
-                    DataGridViewRow r = HelperGrid.ConstruirFila(DatosDataGridView);
-                    HelperGrid.SetearFila(r, localidad);
-                    HelperGrid.AgregarFila(DatosDataGridView, r);
+                    RecargarGrilla(Orden.BD);
+                    //DataGridViewRow r = HelperGrid.ConstruirFila(DatosDataGridView);
+                    //HelperGrid.SetearFila(r, localidad);
+                    //HelperGrid.AgregarFila(DatosDataGridView, r);
                     HelperMensaje.Mensaje(TipoMensaje.OK, "Registro agregado", "Mensaje");
                 }
                 else

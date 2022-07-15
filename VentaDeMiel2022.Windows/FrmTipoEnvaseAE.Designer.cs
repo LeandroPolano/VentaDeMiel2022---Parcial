@@ -49,7 +49,7 @@ namespace VentaDeMiel2022.Windows
             this.CancelarIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.CancelarIconButton.Name = "CancelarIconButton";
             this.CancelarIconButton.Size = new System.Drawing.Size(161, 73);
-            this.CancelarIconButton.TabIndex = 9;
+            this.CancelarIconButton.TabIndex = 2;
             this.CancelarIconButton.Text = "Cancelar";
             this.CancelarIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CancelarIconButton.UseVisualStyleBackColor = false;
@@ -66,7 +66,7 @@ namespace VentaDeMiel2022.Windows
             this.GuardarIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.GuardarIconButton.Name = "GuardarIconButton";
             this.GuardarIconButton.Size = new System.Drawing.Size(161, 73);
-            this.GuardarIconButton.TabIndex = 10;
+            this.GuardarIconButton.TabIndex = 1;
             this.GuardarIconButton.Text = "Guardar";
             this.GuardarIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.GuardarIconButton.UseVisualStyleBackColor = false;
@@ -80,7 +80,7 @@ namespace VentaDeMiel2022.Windows
             this.TipoEnvaseTextBox.MaxLength = 120;
             this.TipoEnvaseTextBox.Name = "TipoEnvaseTextBox";
             this.TipoEnvaseTextBox.Size = new System.Drawing.Size(349, 29);
-            this.TipoEnvaseTextBox.TabIndex = 8;
+            this.TipoEnvaseTextBox.TabIndex = 0;
             // 
             // label1
             // 

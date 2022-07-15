@@ -31,7 +31,7 @@ namespace VentaDeMiel2022.Windows.Helpers
             combo.SelectedIndex = 0;
         }
 
-        public static void CargarDatosComboProvincia(ref ComboBox combo)
+        public static void CargarDatosComboProvincia(ref ComboBox combo, Pais pais = null)
         {
             IServicioProvincia servicio = new ServicioProvincia();
             var lista = servicio.GetLista();
@@ -49,12 +49,12 @@ namespace VentaDeMiel2022.Windows.Helpers
 
 
        
-        public static void CargarDatosComboLocalidad(ref ComboBox combo)
+        public static void CargarDatosComboLocalidad(ref ComboBox combo, Provincia provincia =null)
         {
 
 
             IServicioLocalidad servicio = new ServicioLocalidad();
-            var lista = servicio.GetLista();
+            var lista = servicio.GetLista(provincia,Orden.BD);
             Localidad tpDefault = new Localidad()
             {
                 LocalidadId = 0,

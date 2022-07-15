@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using VentaDeMiel2022.Datos.Repositorio.Facade;
 using VentaDeMiel2022.Entidades.Entidades;
 using VentaDeMiel2022.Entidades.Enum;
@@ -14,7 +12,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
     {
         private readonly VentaDeMiel2022DbContext context;
 
-        public RepositorioProvincia()
+        public RepositorioProvincia(VentaDeMiel2022DbContext ventaDeMiel2022DbContext)
         {
             context = new VentaDeMiel2022DbContext();
         }
@@ -58,12 +56,11 @@ namespace VentaDeMiel2022.Datos.Repositorio
 
       
 
-        public List<Provincia> GetLista(Pais p = null, Orden orden = Orden.BD)
+        public List<Provincia> GetLista(Pais p, Orden orden = Orden.BD)
         {
             try
             {
-                var query = context.Provincias
-                    .Include(p => p.NombrePais);
+                IQueryable<Provincia> query = context.Provincias.Include(p => p.NombrePais);
                 if (p != null)
                 {
                     query = query.Where(p => p.PaisId == p.PaisId);
@@ -124,10 +121,10 @@ namespace VentaDeMiel2022.Datos.Repositorio
                 if (provincia.ProvinciaId == 0)
                 {
                     return context.Provincias
-                        .Any(p => p.NombreProvincia == provincia.NombreProvincia);
+                        .Any(p => p.NombreProvincia == provincia.NombreProvincia && p.PaisId==provincia.PaisId);
                 }
                 return context.Provincias.Any(p => p.NombreProvincia == provincia.NombreProvincia &&
-                                                  p.ProvinciaId != provincia.ProvinciaId);
+                                                  p.PaisId == provincia.PaisId  && p.ProvinciaId!=provincia.ProvinciaId);
             }
             catch (Exception e)
             {

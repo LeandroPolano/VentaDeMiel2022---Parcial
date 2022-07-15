@@ -15,7 +15,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
     {
         private readonly VentaDeMiel2022DbContext context;
 
-        public RepositorioLocalidades()
+        public RepositorioLocalidades(VentaDeMiel2022DbContext ventaDeMiel2022DbContext)
         {
             context = new VentaDeMiel2022DbContext();
         }
@@ -58,7 +58,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
         {
             try
             {
-                var query = context.Localidades
+                IQueryable<Localidad> query = context.Localidades
                     .Include(p => p.NombreProvincia);
                 if (p != null)
                 {
@@ -80,7 +80,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
                         throw new ArgumentOutOfRangeException(nameof(orden), orden, null);
                 }
                 return query
-                    .AsNoTracking()
+                    //.AsNoTracking()
                     .ToList();
             }
             catch (Exception e)
@@ -120,10 +120,11 @@ namespace VentaDeMiel2022.Datos.Repositorio
                 if (localidad.LocalidadId == 0)
                 {
                     return context.Localidades
-                        .Any(p => p.NombreLocalidad == localidad.NombreLocalidad);
+                        .Any(p => p.NombreLocalidad == localidad.NombreLocalidad && p.ProvinciaId == localidad.ProvinciaId);
                 }
                 return context.Localidades.Any(p => p.NombreLocalidad == localidad.NombreLocalidad &&
-                                                   p.LocalidadId != localidad.LocalidadId);
+                                                   p.LocalidadId != localidad.LocalidadId &&
+                                                   p.ProvinciaId==localidad.ProvinciaId);
             }
             catch (Exception e)
             {

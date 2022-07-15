@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VentaDeMiel2022.Datos;
 using VentaDeMiel2022.Datos.Repositorio;
 using VentaDeMiel2022.Datos.Repositorio.Facade;
 using VentaDeMiel2022.Entidades.Entidades;
@@ -14,10 +15,13 @@ namespace VentaDeMiel2022.Servicio.Servicios
     public class ServicioProvincia:IServicioProvincia
     {
         private readonly IRepositorioProvincia repositorio;
-
+        private readonly IRepositorioPais repositorioPais;
+        private readonly VentaDeMiel2022DbContext context;
         public ServicioProvincia()
         {
-            repositorio = new RepositorioProvincia();
+            repositorio = new RepositorioProvincia(context);
+            repositorioPais = new RepositorioPaises(context);
+
         }
         public void Guardar(Provincia provincia)
         {

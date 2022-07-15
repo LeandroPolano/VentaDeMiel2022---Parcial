@@ -46,7 +46,7 @@ namespace VentaDeMiel2022.Windows
             this.PaisTextBox.MaxLength = 120;
             this.PaisTextBox.Name = "PaisTextBox";
             this.PaisTextBox.Size = new System.Drawing.Size(349, 29);
-            this.PaisTextBox.TabIndex = 6;
+            this.PaisTextBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -68,7 +68,7 @@ namespace VentaDeMiel2022.Windows
             this.GuardarIconButton.Location = new System.Drawing.Point(60, 148);
             this.GuardarIconButton.Name = "GuardarIconButton";
             this.GuardarIconButton.Size = new System.Drawing.Size(164, 57);
-            this.GuardarIconButton.TabIndex = 7;
+            this.GuardarIconButton.TabIndex = 1;
             this.GuardarIconButton.Text = "Guardar";
             this.GuardarIconButton.UseVisualStyleBackColor = true;
             this.GuardarIconButton.Click += new System.EventHandler(this.GuardarIconButton_Click);
@@ -78,7 +78,7 @@ namespace VentaDeMiel2022.Windows
             this.CancelarIconButton.Location = new System.Drawing.Point(296, 148);
             this.CancelarIconButton.Name = "CancelarIconButton";
             this.CancelarIconButton.Size = new System.Drawing.Size(164, 57);
-            this.CancelarIconButton.TabIndex = 8;
+            this.CancelarIconButton.TabIndex = 2;
             this.CancelarIconButton.Text = "Cancelar";
             this.CancelarIconButton.UseVisualStyleBackColor = true;
             this.CancelarIconButton.Click += new System.EventHandler(this.CancelarIconButton_Click);

@@ -71,7 +71,7 @@ namespace VentaDeMiel2022.Windows.Helpers
                     r.Cells[0].Value = ((Vendedor)obj).Nombre;
                     r.Cells[1].Value = ((Vendedor)obj).Apellido;
                     r.Cells[2].Value = ((Vendedor)obj).Sexo;
-                    r.Cells[3].Value = ((Vendedor)obj).FechaNacimiento;
+                    r.Cells[3].Value = ((Vendedor)obj).FechaNacimiento.ToShortDateString();
                     r.Cells[4].Value = ((Vendedor)obj).NroDocumento;
                     r.Cells[5].Value = ((Vendedor)obj).Direccion;
                     r.Cells[6].Value = ((Vendedor)obj).TelefonoFijo;

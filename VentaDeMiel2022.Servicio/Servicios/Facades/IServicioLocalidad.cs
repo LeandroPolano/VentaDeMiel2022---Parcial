@@ -20,6 +20,6 @@ namespace VentaDeMiel2022.Servicio.Servicios.Facades
 
         bool Existe(Localidad localidad);
         bool EstaRelacionado(Localidad localidad);
-        List<Localidad> GetLista();
+        //List<Localidad> GetLista();
     }
 }

@@ -48,7 +48,7 @@ namespace VentaDeMiel2022.Windows
             this.ProvinciaTextBox.MaxLength = 120;
             this.ProvinciaTextBox.Name = "ProvinciaTextBox";
             this.ProvinciaTextBox.Size = new System.Drawing.Size(349, 29);
-            this.ProvinciaTextBox.TabIndex = 10;
+            this.ProvinciaTextBox.TabIndex = 0;
             this.ProvinciaTextBox.TextChanged += new System.EventHandler(this.ProvinciaTextBox_TextChanged);
             // 
             // label1
@@ -72,7 +72,7 @@ namespace VentaDeMiel2022.Windows
             this.CancelarIconButton.Location = new System.Drawing.Point(282, 182);
             this.CancelarIconButton.Name = "CancelarIconButton";
             this.CancelarIconButton.Size = new System.Drawing.Size(164, 57);
-            this.CancelarIconButton.TabIndex = 12;
+            this.CancelarIconButton.TabIndex = 3;
             this.CancelarIconButton.Text = "Cancelar";
             this.CancelarIconButton.UseVisualStyleBackColor = true;
             this.CancelarIconButton.Click += new System.EventHandler(this.CancelarIconButton_Click);
@@ -82,19 +82,20 @@ namespace VentaDeMiel2022.Windows
             this.GuardarIconButton.Location = new System.Drawing.Point(46, 182);
             this.GuardarIconButton.Name = "GuardarIconButton";
             this.GuardarIconButton.Size = new System.Drawing.Size(164, 57);
-            this.GuardarIconButton.TabIndex = 11;
+            this.GuardarIconButton.TabIndex = 2;
             this.GuardarIconButton.Text = "Guardar";
             this.GuardarIconButton.UseVisualStyleBackColor = true;
             this.GuardarIconButton.Click += new System.EventHandler(this.GuardarIconButton_Click);
             // 
             // PaisComboBox
             // 
+            this.PaisComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PaisComboBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.PaisComboBox.FormattingEnabled = true;
             this.PaisComboBox.Location = new System.Drawing.Point(118, 91);
             this.PaisComboBox.Name = "PaisComboBox";
             this.PaisComboBox.Size = new System.Drawing.Size(349, 30);
-            this.PaisComboBox.TabIndex = 13;
+            this.PaisComboBox.TabIndex = 1;
             this.PaisComboBox.SelectedIndexChanged += new System.EventHandler(this.PaisComboBox_SelectedIndexChanged);
             // 
             // label2

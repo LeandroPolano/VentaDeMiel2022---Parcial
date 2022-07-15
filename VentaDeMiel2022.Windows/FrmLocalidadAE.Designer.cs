@@ -48,7 +48,7 @@ namespace VentaDeMiel2022.Windows
             this.LocalidadTextBox.MaxLength = 120;
             this.LocalidadTextBox.Name = "LocalidadTextBox";
             this.LocalidadTextBox.Size = new System.Drawing.Size(353, 29);
-            this.LocalidadTextBox.TabIndex = 16;
+            this.LocalidadTextBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -78,12 +78,13 @@ namespace VentaDeMiel2022.Windows
             // 
             // ProvinciaComboBox
             // 
+            this.ProvinciaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ProvinciaComboBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.ProvinciaComboBox.FormattingEnabled = true;
             this.ProvinciaComboBox.Location = new System.Drawing.Point(117, 85);
             this.ProvinciaComboBox.Name = "ProvinciaComboBox";
             this.ProvinciaComboBox.Size = new System.Drawing.Size(353, 30);
-            this.ProvinciaComboBox.TabIndex = 19;
+            this.ProvinciaComboBox.TabIndex = 1;
             // 
             // iconButton1
             // 
@@ -97,7 +98,7 @@ namespace VentaDeMiel2022.Windows
             this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(161, 73);
-            this.iconButton1.TabIndex = 29;
+            this.iconButton1.TabIndex = 3;
             this.iconButton1.Text = "Cancelar";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
@@ -115,7 +116,7 @@ namespace VentaDeMiel2022.Windows
             this.OKIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.OKIconButton.Name = "OKIconButton";
             this.OKIconButton.Size = new System.Drawing.Size(161, 73);
-            this.OKIconButton.TabIndex = 30;
+            this.OKIconButton.TabIndex = 2;
             this.OKIconButton.Text = "OK";
             this.OKIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.OKIconButton.UseVisualStyleBackColor = false;

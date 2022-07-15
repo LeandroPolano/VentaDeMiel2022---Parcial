@@ -60,7 +60,7 @@ namespace VentaDeMiel2022.Windows
 
                     provincia.NombreProvincia = ProvinciaTextBox.Text;
                     provincia.PaisId = ((Pais)PaisComboBox.SelectedItem).PaisId;
-                    provincia.NombrePais = (Pais)PaisComboBox.SelectedItem;
+                    //provincia.NombrePais = (Pais)PaisComboBox.SelectedItem;
 
 
 

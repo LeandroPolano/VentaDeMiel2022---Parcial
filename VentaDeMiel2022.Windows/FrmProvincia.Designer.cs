@@ -81,8 +81,8 @@ namespace VentaDeMiel2022.Windows
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.DatosDataGridView);
-            this.splitContainer1.Size = new System.Drawing.Size(731, 539);
-            this.splitContainer1.SplitterDistance = 98;
+            this.splitContainer1.Size = new System.Drawing.Size(749, 557);
+            this.splitContainer1.SplitterDistance = 101;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 4;
             // 
@@ -192,11 +192,12 @@ namespace VentaDeMiel2022.Windows
             this.DatosDataGridView.MultiSelect = false;
             this.DatosDataGridView.Name = "DatosDataGridView";
             this.DatosDataGridView.ReadOnly = true;
+            this.DatosDataGridView.RowHeadersVisible = false;
             this.DatosDataGridView.RowHeadersWidth = 51;
             this.DatosDataGridView.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DatosDataGridView.RowTemplate.Height = 28;
             this.DatosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DatosDataGridView.Size = new System.Drawing.Size(731, 436);
+            this.DatosDataGridView.Size = new System.Drawing.Size(749, 451);
             this.DatosDataGridView.TabIndex = 0;
             // 
             // colProvincia
@@ -220,10 +221,11 @@ namespace VentaDeMiel2022.Windows
             // FrmProvincia
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(731, 539);
+            this.ClientSize = new System.Drawing.Size(749, 557);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Tahoma", 10.8F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(749, 557);
             this.MinimumSize = new System.Drawing.Size(749, 557);
             this.Name = "FrmProvincia";

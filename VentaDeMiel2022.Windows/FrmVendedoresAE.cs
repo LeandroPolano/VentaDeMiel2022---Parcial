@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using VentaDeMiel2022.Entidades.Entidades;
 
@@ -25,7 +18,7 @@ namespace VentaDeMiel2022.Windows
                 NombreTextBox.Text = vendedor.Nombre;
                 ApellidoTextBox.Text = vendedor.Apellido;
                 SexoTextBox.Text = vendedor.Sexo;
-                FechaDeNacimientoDateTimePicker.Value =vendedor.FechaNacimiento;
+                FechaDeNacimientoDateTimePicker.Value =vendedor.FechaNacimiento.Date;
                 NroDocumentoTextBox.Text = vendedor.NroDocumento;
                 DireccionTextBox.Text = vendedor.Direccion;
                 TelefonoFijoTextBox.Text = vendedor.TelefonoFijo;

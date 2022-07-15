@@ -33,8 +33,8 @@ namespace VentaDeMiel2022.Windows
             base.OnLoad(e);
             servicio = new ServicioCliente();
             HelperCombos.CargarDatosComboTipoDocumento(ref TipoDeDocumentoComboBox);
-            HelperCombos.CargarDatosComboLocalidad(ref LocalidadComboBox);
-            HelperCombos.CargarDatosComboProvincia(ref ProvinciaComboBox);
+            //HelperCombos.CargarDatosComboLocalidad(ref LocalidadComboBox);
+            //HelperCombos.CargarDatosComboProvincia(ref ProvinciaComboBox);
             HelperCombos.CargarDatosComboPais(ref PaisComboBox);
 
             if (cliente != null)
@@ -145,6 +145,42 @@ namespace VentaDeMiel2022.Windows
         public void SetCliente(Cliente cliente1)
         {
             this.cliente = cliente1;
+        }
+
+        private Provincia provincia = null;
+        private void ProvinciaComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ProvinciaComboBox.SelectedIndex!=0)
+            {
+                provincia = (Provincia)ProvinciaComboBox.SelectedItem;
+                HelperCombos.CargarDatosComboLocalidad(ref LocalidadComboBox, provincia);
+            }
+            else
+            {
+                LocalidadComboBox.DataSource = null;
+                provincia = null;
+            }
+        }
+
+        private Pais pais = null;
+        private void PaisComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (PaisComboBox.SelectedIndex != 0)
+            {
+                pais = (Pais)PaisComboBox.SelectedItem;
+                HelperCombos.CargarDatosComboProvincia(ref ProvinciaComboBox, pais);
+
+            }
+            else
+            {
+                ProvinciaComboBox.DataSource = null;
+                pais = null;
+            }
+        }
+
+        private void FrmClienteAE_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

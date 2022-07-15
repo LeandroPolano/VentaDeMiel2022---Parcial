@@ -96,6 +96,7 @@ namespace VentaDeMiel2022.Windows
             // 
             // TipoDeDocumentoComboBox
             // 
+            this.TipoDeDocumentoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TipoDeDocumentoComboBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.TipoDeDocumentoComboBox.FormattingEnabled = true;
             this.TipoDeDocumentoComboBox.Location = new System.Drawing.Point(17, 152);
@@ -128,7 +129,7 @@ namespace VentaDeMiel2022.Windows
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 10.8F);
-            this.label4.Location = new System.Drawing.Point(13, 423);
+            this.label4.Location = new System.Drawing.Point(13, 305);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 23);
@@ -137,12 +138,14 @@ namespace VentaDeMiel2022.Windows
             // 
             // PaisComboBox
             // 
+            this.PaisComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PaisComboBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.PaisComboBox.FormattingEnabled = true;
-            this.PaisComboBox.Location = new System.Drawing.Point(17, 449);
+            this.PaisComboBox.Location = new System.Drawing.Point(17, 331);
             this.PaisComboBox.Name = "PaisComboBox";
             this.PaisComboBox.Size = new System.Drawing.Size(277, 30);
             this.PaisComboBox.TabIndex = 7;
+            this.PaisComboBox.SelectedIndexChanged += new System.EventHandler(this.PaisComboBox_SelectedIndexChanged);
             // 
             // CorreoElectronicoTextBox
             // 
@@ -210,12 +213,14 @@ namespace VentaDeMiel2022.Windows
             // 
             // ProvinciaComboBox
             // 
+            this.ProvinciaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ProvinciaComboBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.ProvinciaComboBox.FormattingEnabled = true;
             this.ProvinciaComboBox.Location = new System.Drawing.Point(17, 390);
             this.ProvinciaComboBox.Name = "ProvinciaComboBox";
             this.ProvinciaComboBox.Size = new System.Drawing.Size(277, 30);
             this.ProvinciaComboBox.TabIndex = 6;
+            this.ProvinciaComboBox.SelectedIndexChanged += new System.EventHandler(this.ProvinciaComboBox_SelectedIndexChanged);
             // 
             // TelefonoFijoTextBox
             // 
@@ -231,7 +236,7 @@ namespace VentaDeMiel2022.Windows
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 10.8F);
-            this.label9.Location = new System.Drawing.Point(13, 305);
+            this.label9.Location = new System.Drawing.Point(13, 423);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 23);
@@ -251,9 +256,10 @@ namespace VentaDeMiel2022.Windows
             // 
             // LocalidadComboBox
             // 
+            this.LocalidadComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LocalidadComboBox.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.LocalidadComboBox.FormattingEnabled = true;
-            this.LocalidadComboBox.Location = new System.Drawing.Point(17, 331);
+            this.LocalidadComboBox.Location = new System.Drawing.Point(17, 449);
             this.LocalidadComboBox.Name = "LocalidadComboBox";
             this.LocalidadComboBox.Size = new System.Drawing.Size(277, 30);
             this.LocalidadComboBox.TabIndex = 5;
@@ -357,6 +363,7 @@ namespace VentaDeMiel2022.Windows
             this.Font = new System.Drawing.Font("Tahoma", 10.8F);
             this.Name = "FrmClienteAE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FrmClienteAE_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

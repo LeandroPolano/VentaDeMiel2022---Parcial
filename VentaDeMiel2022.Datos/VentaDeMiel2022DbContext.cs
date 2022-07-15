@@ -10,7 +10,7 @@ using VentaDeMiel2022.Entidades.Entidades;
 
 namespace VentaDeMiel2022.Datos
 {
-    class VentaDeMiel2022DbContext:DbContext
+    public class VentaDeMiel2022DbContext:DbContext
     {
         public VentaDeMiel2022DbContext() : base("name=MiConexion")
         {

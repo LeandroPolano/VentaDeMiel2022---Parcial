@@ -69,7 +69,7 @@ namespace VentaDeMiel2022.Windows
             this.iconButton1.Location = new System.Drawing.Point(329, 399);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(161, 97);
+            this.iconButton1.Size = new System.Drawing.Size(210, 97);
             this.iconButton1.TabIndex = 12;
             this.iconButton1.Text = "Cancelar";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -87,7 +87,7 @@ namespace VentaDeMiel2022.Windows
             this.OKIconButton.Location = new System.Drawing.Point(329, 217);
             this.OKIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.OKIconButton.Name = "OKIconButton";
-            this.OKIconButton.Size = new System.Drawing.Size(161, 97);
+            this.OKIconButton.Size = new System.Drawing.Size(210, 97);
             this.OKIconButton.TabIndex = 11;
             this.OKIconButton.Text = "OK";
             this.OKIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -322,6 +322,7 @@ namespace VentaDeMiel2022.Windows
             // FechaDeNacimientoDateTimePicker
             // 
             this.FechaDeNacimientoDateTimePicker.Font = new System.Drawing.Font("Tahoma", 10.8F);
+            this.FechaDeNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.FechaDeNacimientoDateTimePicker.Location = new System.Drawing.Point(24, 217);
             this.FechaDeNacimientoDateTimePicker.Name = "FechaDeNacimientoDateTimePicker";
             this.FechaDeNacimientoDateTimePicker.Size = new System.Drawing.Size(277, 29);
@@ -331,7 +332,7 @@ namespace VentaDeMiel2022.Windows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 700);
+            this.ClientSize = new System.Drawing.Size(552, 700);
             this.ControlBox = false;
             this.Controls.Add(this.FechaDeNacimientoDateTimePicker);
             this.Controls.Add(this.UsuarioTextBox);
@@ -357,6 +358,8 @@ namespace VentaDeMiel2022.Windows
             this.Controls.Add(this.CorreoElectronicoTextBox);
             this.Controls.Add(this.NroDocumentoTextBox);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(570, 718);
+            this.MinimumSize = new System.Drawing.Size(570, 718);
             this.Name = "FrmVendedoresAE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmVendedoresAE_Load);

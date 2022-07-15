@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VentaDeMiel2022.Datos;
 using VentaDeMiel2022.Datos.Repositorio;
 using VentaDeMiel2022.Datos.Repositorio.Facade;
 using VentaDeMiel2022.Entidades.Entidades;
@@ -14,10 +15,13 @@ namespace VentaDeMiel2022.Servicio.Servicios
     public class ServicioLocalidad:IServicioLocalidad
     {
         private readonly IRepositorioLocalidad repositorio;
-
+        private readonly IRepositorioProvincia repositorioProvincia;
+        private readonly VentaDeMiel2022DbContext context;
         public ServicioLocalidad()
         {
-            repositorio = new RepositorioLocalidades();
+            context = new VentaDeMiel2022DbContext();
+            repositorio = new RepositorioLocalidades(context);
+            repositorioProvincia = new RepositorioProvincia(context);
         }
         public void Guardar(Localidad localidad)
         {
@@ -86,16 +90,16 @@ namespace VentaDeMiel2022.Servicio.Servicios
 
         public Provincia pr;
         public Orden orden;
-        public List<Localidad> GetLista()
-        {
-            try
-            {
-                return repositorio.GetLista(pr, orden);
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message);
-            }
-        }
+        //public List<Localidad> GetLista()
+        //{
+        //    try
+        //    {
+        //        return repositorio.GetLista(pr, orden);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        throw new Exception(e.Message);
+        //    }
+        //}
     }
 }
