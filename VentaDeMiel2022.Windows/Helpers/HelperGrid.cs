@@ -67,6 +67,19 @@ namespace VentaDeMiel2022.Windows.Helpers
                     r.Cells[9].Value = ((Cliente)obj).TelefonoMovil;
                     r.Cells[10].Value =((Cliente)obj).CorreoElectronico;
                     break;
+                case Vendedor V:
+                    r.Cells[0].Value = ((Vendedor)obj).Nombre;
+                    r.Cells[1].Value = ((Vendedor)obj).Apellido;
+                    r.Cells[2].Value = ((Vendedor)obj).Sexo;
+                    r.Cells[3].Value = ((Vendedor)obj).FechaNacimiento;
+                    r.Cells[4].Value = ((Vendedor)obj).NroDocumento;
+                    r.Cells[5].Value = ((Vendedor)obj).Direccion;
+                    r.Cells[6].Value = ((Vendedor)obj).TelefonoFijo;
+                    r.Cells[7].Value = ((Vendedor)obj).TelefonoMovil;
+                    r.Cells[8].Value = ((Vendedor)obj).Correo;
+                    r.Cells[9].Value = ((Vendedor)obj).Usuario;
+                    r.Cells[10].Value= ((Vendedor)obj).Contraseña;
+                    break;
             }
 
             r.Tag = obj;

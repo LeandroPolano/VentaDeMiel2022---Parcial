@@ -52,6 +52,7 @@
     <Compile Include="Entidades\Provincia.cs" />
     <Compile Include="Entidades\TipoDeDocumento.cs" />
     <Compile Include="Entidades\TipoEnvase.cs" />
+    <Compile Include="Entidades\Vendedor.cs" />
     <Compile Include="Entidades\Venta.cs" />
     <Compile Include="Enum\Orden.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

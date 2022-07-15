@@ -13,7 +13,7 @@ using VentaDeMiel2022.Entidades.Enum;
 
 namespace VentaDeMiel2022.Datos.Repositorio
 {
-    public class RepositorioClientes: IRespositorioCliente
+    public class RepositorioClientes: IRepositorioCliente
     {
         private readonly VentaDeMiel2022DbContext context;
 

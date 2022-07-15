@@ -5,7 +5,7 @@ using VentaDeMiel2022.Entidades.Enum;
 
 namespace VentaDeMiel2022.Datos.Repositorio.Facade
 {
-    public interface IRespositorioCliente
+    public interface IRepositorioCliente
     {
         void Guardar(Cliente cliente);
 

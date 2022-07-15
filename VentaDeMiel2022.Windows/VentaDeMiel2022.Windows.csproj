@@ -141,6 +141,18 @@
     <Compile Include="FrmTiposDeDocumentos.Designer.cs">
       <DependentUpon>FrmTiposDeDocumentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVendedores.Designer.cs">
+      <DependentUpon>FrmVendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVendedoresAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVendedoresAE.Designer.cs">
+      <DependentUpon>FrmVendedoresAE.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +216,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTiposDeDocumentos.resx">
       <DependentUpon>FrmTiposDeDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVendedores.resx">
+      <DependentUpon>FrmVendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVendedoresAE.resx">
+      <DependentUpon>FrmVendedoresAE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentas.resx">
       <DependentUpon>frmVentas.cs</DependentUpon>

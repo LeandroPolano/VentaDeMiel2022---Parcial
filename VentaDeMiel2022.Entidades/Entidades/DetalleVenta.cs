@@ -15,7 +15,8 @@ namespace VentaDeMiel2022.Entidades.Entidades
     public int TipoEnvaseId { get; set; }
     public int Cantidad { get; set; }
     public decimal PrecioVenta { get; set; }
-
+    public int VendedorId { get; set; }
+    public Vendedor Vendedor { get; set; }
     public Cliente Cliente { get; set; }
     public Venta Venta { get; set; }
     public TipoEnvase TipoEnvase { get; set; }

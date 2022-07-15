@@ -37,6 +37,7 @@ namespace VentaDeMiel2022.Datos
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<DetalleVenta> DetalleVentas { get; set; }
 
+        public DbSet<Vendedor> Vendedores { get; set; }
 
 
 

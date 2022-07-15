@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using VentaDeMiel2022.Datos.Repositorio;
@@ -12,19 +11,19 @@ using VentaDeMiel2022.Servicio.Servicios.Facades;
 
 namespace VentaDeMiel2022.Servicio.Servicios
 {
-    public class ServicioCliente:IServicioClientes
+    public class ServicioVendedor : IServicioVendedor
     {
-        private readonly IRepositorioCliente repositorio;
+        private readonly IRepositorioVendedor repositorio;
 
-        public ServicioCliente()
+        public ServicioVendedor()
         {
-            repositorio = new RepositorioClientes();
+            repositorio = new RepositorioVendedores();
         }
-        public void Guardar(Cliente cliente)
+        public void Guardar(Vendedor vendedor)
         {
             try
             {
-                repositorio.Guardar(cliente);
+                repositorio.Guardar(vendedor);
             }
             catch (Exception e)
             {
@@ -32,16 +31,11 @@ namespace VentaDeMiel2022.Servicio.Servicios
             }
         }
 
-        public TipoDeDocumento td;
-        public Localidad L;
-        public Provincia pr;
-        public Pais p;
-        public Orden orden;
-        public List<Cliente> GetLista(TipoDeDocumento td, Localidad L, Provincia pr, Pais p)
+        public List<Vendedor> GetLista(Orden orden)
         {
             try
             {
-                return repositorio.GetLista(td,L,pr,p);
+                return repositorio.GetLista(orden);
             }
             catch (Exception e)
             {
@@ -49,11 +43,11 @@ namespace VentaDeMiel2022.Servicio.Servicios
             }
         }
 
-        public void Borrar(int clienteId)
+        public void Borrar(int vendedorId)
         {
             try
             {
-                repositorio.Borrar(clienteId);
+                repositorio.Borrar(vendedorId);
             }
             catch (Exception e)
             {
@@ -61,16 +55,16 @@ namespace VentaDeMiel2022.Servicio.Servicios
             }
         }
 
-        public Cliente GetClientePorId(int id)
+        public Vendedor GetVendedorPorId(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool Existe(Cliente cliente)
+        public bool Existe(Vendedor vendedor)
         {
             try
             {
-                return repositorio.Existe(cliente);
+                return repositorio.Existe(vendedor);
             }
             catch (Exception e)
             {
@@ -78,11 +72,11 @@ namespace VentaDeMiel2022.Servicio.Servicios
             }
         }
 
-        public bool EstaRelacionado(Cliente cliente)
+        public bool EstaRelacionado(Vendedor vendedor)
         {
             try
             {
-                return repositorio.EstaRelacionado(cliente);
+                return repositorio.EstaRelacionado(vendedor);
             }
             catch (Exception e)
             {

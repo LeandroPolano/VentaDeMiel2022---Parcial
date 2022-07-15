@@ -30,7 +30,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
                     var tipoDeDocumentoInDb = context.TipoDeDocumentos.SingleOrDefault(p => p.TipoDeDocumentoId == tipoDeDocumento.TipoDeDocumentoId);
                     if (tipoDeDocumentoInDb == null)
                     {
-                        throw new Exception("Código de Envase inexistente");
+                        throw new Exception("Código de Tipo Documento inexistente");
                     }
 
                     tipoDeDocumentoInDb.Descripcion = tipoDeDocumento.Descripcion;

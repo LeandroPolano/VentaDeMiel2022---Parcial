@@ -49,12 +49,14 @@
     <Compile Include="Servicios\Facades\IServicioProvincia.cs" />
     <Compile Include="Servicios\Facades\IServicioTipoDeDocumentos.cs" />
     <Compile Include="Servicios\Facades\IServicioTipoEnvase.cs" />
+    <Compile Include="Servicios\Facades\IServicioVendedor.cs" />
     <Compile Include="Servicios\ServicioCliente.cs" />
     <Compile Include="Servicios\ServicioLocalidad.cs" />
     <Compile Include="Servicios\ServicioPaises.cs" />
     <Compile Include="Servicios\ServicioProvincia.cs" />
     <Compile Include="Servicios\ServicioTipoDeDocumento.cs" />
     <Compile Include="Servicios\ServicioTipoEnvase.cs" />
+    <Compile Include="Servicios\ServicioVendedor.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

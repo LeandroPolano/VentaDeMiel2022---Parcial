@@ -38,6 +38,7 @@ namespace VentaDeMiel2022.Windows
             this.TipoEnvaseButton = new System.Windows.Forms.Button();
             this.PaisButton = new System.Windows.Forms.Button();
             this.ClientesButton = new System.Windows.Forms.Button();
+            this.VendedorButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -58,6 +59,7 @@ namespace VentaDeMiel2022.Windows
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.VendedorButton);
             this.splitContainer1.Panel2.Controls.Add(this.CerrarButton);
             this.splitContainer1.Panel2.Controls.Add(this.LocalidadButton);
             this.splitContainer1.Panel2.Controls.Add(this.button6);
@@ -177,12 +179,25 @@ namespace VentaDeMiel2022.Windows
             this.ClientesButton.UseVisualStyleBackColor = false;
             this.ClientesButton.Click += new System.EventHandler(this.ClientesButton_Click);
             // 
+            // VendedorButton
+            // 
+            this.VendedorButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.VendedorButton.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.VendedorButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.VendedorButton.Location = new System.Drawing.Point(333, 4);
+            this.VendedorButton.Name = "VendedorButton";
+            this.VendedorButton.Size = new System.Drawing.Size(161, 68);
+            this.VendedorButton.TabIndex = 8;
+            this.VendedorButton.Text = "Vendedor";
+            this.VendedorButton.UseVisualStyleBackColor = false;
+            this.VendedorButton.Click += new System.EventHandler(this.VendedorButton_Click);
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(504, 524);
+            this.ClientSize = new System.Drawing.Size(516, 536);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -210,6 +225,7 @@ namespace VentaDeMiel2022.Windows
         private System.Windows.Forms.Button PaisButton;
         private System.Windows.Forms.Button ClientesButton;
         private System.Windows.Forms.Button CerrarButton;
+        private System.Windows.Forms.Button VendedorButton;
     }
 }
 
