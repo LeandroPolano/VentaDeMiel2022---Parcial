@@ -15,7 +15,6 @@ namespace VentaDeMiel2022.Datos
         public VentaDeMiel2022DbContext() : base("name=MiConexion")
         {
             Database.CommandTimeout = 45; //Establezco el tiempo de espera de respuesta de la BD
-            Configuration.UseDatabaseNullSemantics = true; // Acelera el tiempo de respuesta de las queries
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

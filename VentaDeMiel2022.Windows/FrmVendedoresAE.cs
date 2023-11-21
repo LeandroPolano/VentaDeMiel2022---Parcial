@@ -17,15 +17,13 @@ namespace VentaDeMiel2022.Windows
             {
                 NombreTextBox.Text = vendedor.Nombre;
                 ApellidoTextBox.Text = vendedor.Apellido;
-                SexoTextBox.Text = vendedor.Sexo;
                 FechaDeNacimientoDateTimePicker.Value =vendedor.FechaNacimiento.Date;
                 NroDocumentoTextBox.Text = vendedor.NroDocumento;
                 DireccionTextBox.Text = vendedor.Direccion;
                 TelefonoFijoTextBox.Text = vendedor.TelefonoFijo;
                 TelefonoMovilTextBox.Text = vendedor.TelefonoMovil;
                 CorreoElectronicoTextBox.Text = vendedor.Correo;
-                UsuarioTextBox.Text = vendedor.Usuario;
-                ContraseñaTextBox.Text = vendedor.Contraseña;
+               
             }
         }
         private Vendedor vendedor;
@@ -50,15 +48,13 @@ namespace VentaDeMiel2022.Windows
 
                 vendedor.Nombre = NombreTextBox.Text;
                 vendedor.Apellido = ApellidoTextBox.Text;
-                vendedor.Sexo = SexoTextBox.Text;
                 vendedor.FechaNacimiento =FechaDeNacimientoDateTimePicker.Value;
                 vendedor.NroDocumento = NroDocumentoTextBox.Text;
                 vendedor.Direccion = DireccionTextBox.Text;
                 vendedor.TelefonoFijo = TelefonoFijoTextBox.Text;
                 vendedor.TelefonoMovil = TelefonoMovilTextBox.Text;
                 vendedor.Correo = CorreoElectronicoTextBox.Text;
-                vendedor.Usuario = UsuarioTextBox.Text;
-                vendedor.Contraseña = ContraseñaTextBox.Text;
+               
                 
                 
                 
@@ -82,11 +78,6 @@ namespace VentaDeMiel2022.Windows
                 valido = false;
                 errorProvider1.SetError(ApellidoTextBox, "El Apellido es requerido");
             }
-            if (string.IsNullOrEmpty(SexoTextBox.Text.Trim()))
-            {
-                valido = false;
-                errorProvider1.SetError(SexoTextBox, "El Sexo es requerido");
-            }
             if (string.IsNullOrEmpty(FechaDeNacimientoDateTimePicker.Text.Trim()))
             {
                 valido = false;
@@ -102,31 +93,22 @@ namespace VentaDeMiel2022.Windows
                 valido = false;
                 errorProvider1.SetError(DireccionTextBox, "La direccion es requerida");
             }
-            //if (string.IsNullOrEmpty(TelefonoFijoTextBox.Text.Trim()))
-            //{
-            //    valido = false;
-            //    errorProvider1.SetError(TelefonoFijoTextBox, "El Telefono Fijo es requerido");
-            //}
-            //if (string.IsNullOrEmpty(TelefonoMovilTextBox.Text.Trim()))
-            //{
-            //    valido = false;
-            //    errorProvider1.SetError(TelefonoMovilTextBox, "El Telefono Movil es requerido");
-            //}
-            //if (string.IsNullOrEmpty(CorreoElectronicoTextBox.Text.Trim()))
-            //{
-            //    valido = false;
-            //    errorProvider1.SetError(CorreoElectronicoTextBox, "El Correo es requerido");
-            //}
-            if (string.IsNullOrEmpty(UsuarioTextBox.Text.Trim()))
+            if (string.IsNullOrEmpty(TelefonoFijoTextBox.Text.Trim()))
             {
                 valido = false;
-                errorProvider1.SetError(UsuarioTextBox, "El Usuario es requerido");
+                errorProvider1.SetError(TelefonoFijoTextBox, "Por razones de comunicacion (Telefono Fijo requerido)");
             }
-            if (string.IsNullOrEmpty(ContraseñaTextBox.Text.Trim()))
+            if (string.IsNullOrEmpty(TelefonoMovilTextBox.Text.Trim()))
             {
                 valido = false;
-                errorProvider1.SetError(ContraseñaTextBox, "La Contraseña es requerida");
+                errorProvider1.SetError(TelefonoMovilTextBox, "Por razones de comunicacion (Telefono Movil requerido)");
             }
+            if (string.IsNullOrEmpty(CorreoElectronicoTextBox.Text.Trim()))
+            {
+                valido = false;
+                errorProvider1.SetError(CorreoElectronicoTextBox, "Por razones de comunicacion (El Correo requerido)");
+            }
+
 
             return valido;
         }
@@ -137,6 +119,11 @@ namespace VentaDeMiel2022.Windows
         }
 
         private void FrmVendedoresAE_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

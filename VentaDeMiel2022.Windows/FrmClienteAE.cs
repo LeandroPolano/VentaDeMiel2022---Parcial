@@ -33,8 +33,8 @@ namespace VentaDeMiel2022.Windows
             base.OnLoad(e);
             servicio = new ServicioCliente();
             HelperCombos.CargarDatosComboTipoDocumento(ref TipoDeDocumentoComboBox);
-            //HelperCombos.CargarDatosComboLocalidad(ref LocalidadComboBox);
-            //HelperCombos.CargarDatosComboProvincia(ref ProvinciaComboBox);
+            HelperCombos.CargarDatosComboLocalidad(ref LocalidadComboBox);
+            HelperCombos.CargarDatosComboProvincia(ref ProvinciaComboBox);
             HelperCombos.CargarDatosComboPais(ref PaisComboBox);
 
             if (cliente != null)
@@ -59,8 +59,7 @@ namespace VentaDeMiel2022.Windows
         {
             if (ValidarDatos())
             {
-                if (ValidarDatos())
-                {
+               
                     if (cliente == null)
                     {
                         cliente = new Cliente();
@@ -84,7 +83,7 @@ namespace VentaDeMiel2022.Windows
 
 
                     DialogResult = DialogResult.OK;
-                }
+                
             }
         }
         private bool ValidarDatos()
