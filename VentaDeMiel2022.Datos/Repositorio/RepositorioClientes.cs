@@ -26,15 +26,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
         {
             try
             {
-                //if (cliente.TipoDeDocumento != null  && cliente.NombreLocalidad != null && cliente.NombreProvincia != null
-                //&& cliente.NombrePais != null)
-                //{
-                //    context.TipoDeDocumentos.Attach(cliente.TipoDeDocumento);
-                //    context.Localidades.Attach(cliente.NombreLocalidad);
-                //    context.Provincias.Attach(cliente.NombreProvincia);
-                //    context.Paises.Attach(cliente.NombrePais);
-
-                //}
+               
                 if (cliente.ClienteId == 0)
                 {
                     context.Clientes.Add(cliente);
