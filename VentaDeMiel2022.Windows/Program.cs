@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VentaDeMiel2022.Windows.Ninject;
 
 namespace VentaDeMiel2022.Windows
 {
@@ -14,6 +15,7 @@ namespace VentaDeMiel2022.Windows
         [STAThread]
         static void Main()
         {
+            DI.Inicialize();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmMenuPrincipal());

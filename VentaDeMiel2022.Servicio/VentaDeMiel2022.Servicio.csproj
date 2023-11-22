@@ -31,9 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject, Version=3.3.6.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.6\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +54,7 @@
     <Compile Include="Servicios\Facades\IServicioTipoDeDocumentos.cs" />
     <Compile Include="Servicios\Facades\IServicioTipoEnvase.cs" />
     <Compile Include="Servicios\Facades\IServicioVendedor.cs" />
+    <Compile Include="Servicios\Facades\IServicioVentas.cs" />
     <Compile Include="Servicios\ServicioCliente.cs" />
     <Compile Include="Servicios\ServicioLocalidad.cs" />
     <Compile Include="Servicios\ServicioPaises.cs" />
@@ -57,8 +62,11 @@
     <Compile Include="Servicios\ServicioTipoDeDocumento.cs" />
     <Compile Include="Servicios\ServicioTipoEnvase.cs" />
     <Compile Include="Servicios\ServicioVendedor.cs" />
+    <Compile Include="Servicios\ServicioVentas.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VentaDeMiel2022.Datos\VentaDeMiel2022.Datos.csproj">
       <Project>{93d53f62-7bdb-41d0-bd40-e57c73185b46}</Project>

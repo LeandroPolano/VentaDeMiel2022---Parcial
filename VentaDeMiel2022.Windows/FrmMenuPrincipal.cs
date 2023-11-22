@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VentaDeMiel2022.Servicios.Servicios.Facades;
+using VentaDeMiel2022.Windows.Ninject;
 
 namespace VentaDeMiel2022.Windows
 {
@@ -79,6 +81,12 @@ namespace VentaDeMiel2022.Windows
         private void VendedorButton_Click(object sender, EventArgs e)
         {
             FrmVendedores frm = new FrmVendedores() { /*Text = "Clientes"*/ };
+            DialogResult dr = frm.ShowDialog(this);
+        }
+
+        private void VentasButton_Click(object sender, EventArgs e)
+        {
+            frmVentas frm = new frmVentas(DI.Create<IServicioVentas>()) { /*Text = "Ventas"*/ };
             DialogResult dr = frm.ShowDialog(this);
         }
     }

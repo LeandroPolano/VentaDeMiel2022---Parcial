@@ -31,6 +31,7 @@ namespace VentaDeMiel2022.Windows
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
+            this.VendedorButton = new System.Windows.Forms.Button();
             this.CerrarButton = new System.Windows.Forms.Button();
             this.LocalidadButton = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -38,7 +39,7 @@ namespace VentaDeMiel2022.Windows
             this.TipoEnvaseButton = new System.Windows.Forms.Button();
             this.PaisButton = new System.Windows.Forms.Button();
             this.ClientesButton = new System.Windows.Forms.Button();
-            this.VendedorButton = new System.Windows.Forms.Button();
+            this.VentasButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -59,6 +60,7 @@ namespace VentaDeMiel2022.Windows
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.VentasButton);
             this.splitContainer1.Panel2.Controls.Add(this.VendedorButton);
             this.splitContainer1.Panel2.Controls.Add(this.CerrarButton);
             this.splitContainer1.Panel2.Controls.Add(this.LocalidadButton);
@@ -86,12 +88,25 @@ namespace VentaDeMiel2022.Windows
             this.label1.Text = "Venta De Miel";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // VendedorButton
+            // 
+            this.VendedorButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.VendedorButton.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.VendedorButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.VendedorButton.Location = new System.Drawing.Point(333, 4);
+            this.VendedorButton.Name = "VendedorButton";
+            this.VendedorButton.Size = new System.Drawing.Size(161, 68);
+            this.VendedorButton.TabIndex = 8;
+            this.VendedorButton.Text = "Vendedor";
+            this.VendedorButton.UseVisualStyleBackColor = false;
+            this.VendedorButton.Click += new System.EventHandler(this.VendedorButton_Click);
+            // 
             // CerrarButton
             // 
             this.CerrarButton.BackColor = System.Drawing.Color.Maroon;
             this.CerrarButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.CerrarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CerrarButton.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CerrarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CerrarButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CerrarButton.Location = new System.Drawing.Point(333, 374);
             this.CerrarButton.Name = "CerrarButton";
@@ -179,18 +194,18 @@ namespace VentaDeMiel2022.Windows
             this.ClientesButton.UseVisualStyleBackColor = false;
             this.ClientesButton.Click += new System.EventHandler(this.ClientesButton_Click);
             // 
-            // VendedorButton
+            // VentasButton
             // 
-            this.VendedorButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.VendedorButton.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.VendedorButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.VendedorButton.Location = new System.Drawing.Point(333, 4);
-            this.VendedorButton.Name = "VendedorButton";
-            this.VendedorButton.Size = new System.Drawing.Size(161, 68);
-            this.VendedorButton.TabIndex = 8;
-            this.VendedorButton.Text = "Vendedor";
-            this.VendedorButton.UseVisualStyleBackColor = false;
-            this.VendedorButton.Click += new System.EventHandler(this.VendedorButton_Click);
+            this.VentasButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.VentasButton.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.VentasButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.VentasButton.Location = new System.Drawing.Point(333, 78);
+            this.VentasButton.Name = "VentasButton";
+            this.VentasButton.Size = new System.Drawing.Size(161, 68);
+            this.VentasButton.TabIndex = 9;
+            this.VentasButton.Text = "Ventas";
+            this.VentasButton.UseVisualStyleBackColor = false;
+            this.VentasButton.Click += new System.EventHandler(this.VentasButton_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -226,6 +241,7 @@ namespace VentaDeMiel2022.Windows
         private System.Windows.Forms.Button ClientesButton;
         private System.Windows.Forms.Button CerrarButton;
         private System.Windows.Forms.Button VendedorButton;
+        private System.Windows.Forms.Button VentasButton;
     }
 }
 

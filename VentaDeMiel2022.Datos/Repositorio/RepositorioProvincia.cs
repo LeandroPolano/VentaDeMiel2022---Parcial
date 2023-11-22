@@ -21,7 +21,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
         {
             try
             {
-                if (provincia.NombrePais!=null)
+                if (provincia.NombrePais != null)
                 {
                     context.Paises.Attach(provincia.NombrePais);
                 }
@@ -46,6 +46,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
                 }
 
                 context.SaveChanges();
+                
             }
             catch (Exception e)
             {

@@ -42,6 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.6.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.6\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -61,21 +64,28 @@
     <Compile Include="EntityTypeConfiguration\TipoDeDocumentoEntityTypeConfiguration.cs" />
     <Compile Include="EntityTypeConfiguration\TipoEnvaseEntityTypeConfiguration.cs" />
     <Compile Include="EntityTypeConfiguration\VendedorEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\VentaEntityTypeConfiguration.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\Facade\IRepositorioDetalleVentas.cs" />
     <Compile Include="Repositorio\Facade\IRepositorioLocalidad.cs" />
     <Compile Include="Repositorio\Facade\IRepositorioPais.cs" />
     <Compile Include="Repositorio\Facade\IRepositorioProvincia.cs" />
     <Compile Include="Repositorio\Facade\IRepositorioTipoDeDocumento.cs" />
     <Compile Include="Repositorio\Facade\IRepositorioTipoEnvase.cs" />
+    <Compile Include="Repositorio\Facade\IRepositorioVentas.cs" />
     <Compile Include="Repositorio\Facade\IRespositorioCliente.cs" />
     <Compile Include="Repositorio\Facade\IRepositorioVendedor.cs" />
     <Compile Include="Repositorio\RepositorioClientes.cs" />
+    <Compile Include="Repositorio\RepositorioDetalleVentas.cs" />
     <Compile Include="Repositorio\RepositorioLocalidades.cs" />
     <Compile Include="Repositorio\RepositorioPaises.cs" />
     <Compile Include="Repositorio\RepositorioProvincia.cs" />
     <Compile Include="Repositorio\RepositorioTipoDeDocumento.cs" />
     <Compile Include="Repositorio\RepositorioTipoEnvase.cs" />
     <Compile Include="Repositorio\RepositorioVendedores.cs" />
+    <Compile Include="Repositorio\RepositorioVentas.cs" />
+    <Compile Include="UnitOfWork.cs" />
     <Compile Include="VentaDeMiel2022DbContext.cs" />
   </ItemGroup>
   <ItemGroup />

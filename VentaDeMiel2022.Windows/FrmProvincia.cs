@@ -205,6 +205,7 @@ namespace VentaDeMiel2022.Windows
 
         private void EditarIconButton_Click(object sender, EventArgs e)
         {
+            
             if (DatosDataGridView.SelectedRows.Count==0)
             {
                 return;
@@ -227,6 +228,7 @@ namespace VentaDeMiel2022.Windows
                 if (!servicio.Existe(p))
                 {
                     servicio.Guardar(p);
+
                     HelperGrid.SetearFila(r,p);
                     HelperMensaje.Mensaje(TipoMensaje.OK, "Provincia editada", "Mensaje");
                 }
@@ -243,6 +245,8 @@ namespace VentaDeMiel2022.Windows
 
                 HelperMensaje.Mensaje(TipoMensaje.Error, exception.Message, "Error");
             }
+            
+
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
