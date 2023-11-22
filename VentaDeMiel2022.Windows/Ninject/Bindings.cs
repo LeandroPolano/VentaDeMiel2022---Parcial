@@ -7,6 +7,7 @@ using Ninject.Modules;
 using VentaDeMiel2022.Servicio.Servicios.Facades;
 using VentaDeMiel2022.Servicio.Servicios;
 using VentaDeMiel2022.Datos.Repositorios;
+using VentaDeMiel2022.Datos.Repositorios.Facades;
 
 namespace VentaDeMiel2022.Windows.Ninject
 {
@@ -18,7 +19,10 @@ namespace VentaDeMiel2022.Windows.Ninject
             Bind<IUnitOfWork>().To<UnitOfWork>();
 
             Bind<IRepositorioTipoEnvase>().To<RepositorioTipoEnvase>();
-            Bind<IServicioTipoEnvase>().To<ServicioTipoEnvase>();      
+            Bind<IServicioTipoEnvase>().To<ServicioTipoEnvase>();
+
+            Bind<IRepositorioEnvases>().To<RepositorioEnvases>();
+            Bind<IServicioEnvases>().To<ServicioEnvases>();
 
             Bind<IRepositorioVentas>().To<RepositorioVentas>();
             Bind<IRepositorioDetalleVentas>().To<RepositorioDetalleVentas>();

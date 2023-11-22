@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VentaDeMiel2022.Datos.Repositorio.Facade
 {
-    public class IRepositorioDetalleVentas
+    public interface IRepositorioDetalleVentas
     {
     }
 }

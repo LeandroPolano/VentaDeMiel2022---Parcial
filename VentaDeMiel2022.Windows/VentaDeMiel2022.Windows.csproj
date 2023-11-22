@@ -80,6 +80,12 @@
     <Compile Include="FrmBuscarPorProvincia.Designer.cs">
       <DependentUpon>FrmBuscarPorProvincia.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarPorTipoDeEnvase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPorTipoDeEnvase.Designer.cs">
+      <DependentUpon>frmBuscarPorTipoDeEnvase.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmClienteAE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,18 @@
     </Compile>
     <Compile Include="FrmClientes.Designer.cs">
       <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnvases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnvases.Designer.cs">
+      <DependentUpon>FrmEnvases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnvaseAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnvaseAE.Designer.cs">
+      <DependentUpon>FrmEnvaseAE.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLocalidadAE.cs">
       <SubType>Form</SubType>
@@ -202,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnvases.resx">
+      <DependentUpon>FrmEnvases.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLocalidadAE.resx">
       <DependentUpon>FrmLocalidadAE.cs</DependentUpon>

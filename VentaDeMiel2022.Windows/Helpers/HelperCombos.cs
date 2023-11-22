@@ -10,6 +10,7 @@ using VentaDeMiel2022.Entidades.Entidades;
 using VentaDeMiel2022.Entidades.Enum;
 using VentaDeMiel2022.Servicio.Servicios;
 using VentaDeMiel2022.Servicio.Servicios.Facades;
+using VentaDeMiel2022.Windows.Ninject;
 
 namespace VentaDeMiel2022.Windows.Helpers
 {
@@ -81,6 +82,42 @@ namespace VentaDeMiel2022.Windows.Helpers
             combo.DataSource = lista;
             combo.DisplayMember = "Descripcion";
             combo.ValueMember = "TipoDeDocumentoId";
+            combo.SelectedIndex = 0;
+        }
+        public static void CargarDatosComboTipos(ref ComboBox combo)
+        {
+            IServicioTipoEnvase servicio = DI.Create<IServicioTipoEnvase>(); 
+            var lista = servicio.GetLista();
+            TipoEnvase tpDefault = new TipoEnvase() 
+            {
+                TipoEnvaseId = 0,
+                Descripcion = "Seleccione Tipo Envase"
+            };
+            lista.Insert(0, tpDefault);
+            combo.DataSource = lista;
+            combo.DisplayMember = "Descripcion";
+            combo.ValueMember = "TipoEnvaseId";
+            combo.SelectedIndex = 0;
+        }
+
+        public static void CargarDatosComboMeses(ref ComboBox combo)
+        {
+            for (int mes = 1; mes <= 12; mes++)
+            {
+                combo.Items.Add(mes.ToString().PadLeft(2, '0'));
+            }
+
+            combo.SelectedIndex = 0;
+        }
+
+        public static void CargarDatosComboAnios(ref ComboBox combo)
+        {
+            var anioActual = DateTime.Now.Year;
+            for (int i = 0; i <= 12; i++)
+            {
+                combo.Items.Add(anioActual + i);
+            }
+
             combo.SelectedIndex = 0;
         }
     }

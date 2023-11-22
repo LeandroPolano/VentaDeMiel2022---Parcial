@@ -89,5 +89,11 @@ namespace VentaDeMiel2022.Windows
             frmVentas frm = new frmVentas(DI.Create<IServicioVentas>()) { /*Text = "Ventas"*/ };
             DialogResult dr = frm.ShowDialog(this);
         }
+
+        private void EnvaseButton_Click(object sender, EventArgs e)
+        {
+            FrmEnvases frm = new FrmEnvases(DI.Create<IServicioEnvases>()) { /*Text = "Envases"*/ };
+            DialogResult dr = frm.ShowDialog(this);
+        }
     }
 }

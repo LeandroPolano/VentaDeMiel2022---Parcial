@@ -78,7 +78,19 @@ namespace VentaDeMiel2022.Windows.Helpers
                     r.Cells[7].Value = ((Vendedor)obj).Correo;
                     
                     break;
-            }
+                case Venta venta:
+                    r.Cells[0].Value = venta.VentaId;
+                    r.Cells[1].Value = venta.FechaVenta.ToShortDateString();
+                    r.Cells[2].Value = venta.Total.ToString("C");
+                    r.Cells[3].Value = venta.Estado.ToString();
+                    break;
+                case Envase envase:
+                    r.Cells[0].Value = envase.Descripcion;
+                    r.Cells[1].Value = envase.TipoEnvase.Descripcion;
+                    r.Cells[2].Value = envase.Precio.ToString("C");
+                    r.Cells[3].Value = envase.Stock;
+                    break;
+            }   
 
             r.Tag = obj;
 

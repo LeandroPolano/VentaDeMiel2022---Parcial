@@ -35,8 +35,8 @@ namespace VentaDeMiel2022.Datos
         public DbSet<TipoEnvase> TiposEnvases { get; set; }
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<DetalleVenta> DetalleVentas { get; set; }
-
         public DbSet<Vendedor> Vendedores { get; set; }
+        public DbSet<Envase> Envases { get; set; }
 
 
 

@@ -31,6 +31,7 @@ namespace VentaDeMiel2022.Windows
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
+            this.VentasButton = new System.Windows.Forms.Button();
             this.VendedorButton = new System.Windows.Forms.Button();
             this.CerrarButton = new System.Windows.Forms.Button();
             this.LocalidadButton = new System.Windows.Forms.Button();
@@ -39,7 +40,7 @@ namespace VentaDeMiel2022.Windows
             this.TipoEnvaseButton = new System.Windows.Forms.Button();
             this.PaisButton = new System.Windows.Forms.Button();
             this.ClientesButton = new System.Windows.Forms.Button();
-            this.VentasButton = new System.Windows.Forms.Button();
+            this.EnvaseButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -60,6 +61,7 @@ namespace VentaDeMiel2022.Windows
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.EnvaseButton);
             this.splitContainer1.Panel2.Controls.Add(this.VentasButton);
             this.splitContainer1.Panel2.Controls.Add(this.VendedorButton);
             this.splitContainer1.Panel2.Controls.Add(this.CerrarButton);
@@ -87,6 +89,19 @@ namespace VentaDeMiel2022.Windows
             this.label1.TabIndex = 0;
             this.label1.Text = "Venta De Miel";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // VentasButton
+            // 
+            this.VentasButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.VentasButton.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.VentasButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.VentasButton.Location = new System.Drawing.Point(333, 78);
+            this.VentasButton.Name = "VentasButton";
+            this.VentasButton.Size = new System.Drawing.Size(161, 68);
+            this.VentasButton.TabIndex = 9;
+            this.VentasButton.Text = "Ventas";
+            this.VentasButton.UseVisualStyleBackColor = false;
+            this.VentasButton.Click += new System.EventHandler(this.VentasButton_Click);
             // 
             // VendedorButton
             // 
@@ -194,18 +209,18 @@ namespace VentaDeMiel2022.Windows
             this.ClientesButton.UseVisualStyleBackColor = false;
             this.ClientesButton.Click += new System.EventHandler(this.ClientesButton_Click);
             // 
-            // VentasButton
+            // EnvaseButton
             // 
-            this.VentasButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.VentasButton.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.VentasButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.VentasButton.Location = new System.Drawing.Point(333, 78);
-            this.VentasButton.Name = "VentasButton";
-            this.VentasButton.Size = new System.Drawing.Size(161, 68);
-            this.VentasButton.TabIndex = 9;
-            this.VentasButton.Text = "Ventas";
-            this.VentasButton.UseVisualStyleBackColor = false;
-            this.VentasButton.Click += new System.EventHandler(this.VentasButton_Click);
+            this.EnvaseButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.EnvaseButton.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.EnvaseButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.EnvaseButton.Location = new System.Drawing.Point(333, 152);
+            this.EnvaseButton.Name = "EnvaseButton";
+            this.EnvaseButton.Size = new System.Drawing.Size(161, 68);
+            this.EnvaseButton.TabIndex = 10;
+            this.EnvaseButton.Text = "Envase";
+            this.EnvaseButton.UseVisualStyleBackColor = false;
+            this.EnvaseButton.Click += new System.EventHandler(this.EnvaseButton_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -242,6 +257,7 @@ namespace VentaDeMiel2022.Windows
         private System.Windows.Forms.Button CerrarButton;
         private System.Windows.Forms.Button VendedorButton;
         private System.Windows.Forms.Button VentasButton;
+        private System.Windows.Forms.Button EnvaseButton;
     }
 }
 
