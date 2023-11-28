@@ -9,6 +9,6 @@ namespace VentaDeMiel2022.Servicios.Servicios.Facades
         void Guardar(Venta venta);
 
         void CambiarEstado(Venta venta);
-        //List<DetalleVenta> GetDetalleVenta(int ventaVentaId);
+        List<DetalleVenta> GetDetalleVenta(int ventaVentaId);
     }
 }

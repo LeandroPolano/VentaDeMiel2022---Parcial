@@ -63,13 +63,13 @@ namespace VentaDeMiel2022.Windows
         private void FrmClientes_Load(object sender, EventArgs e)
         {
             servicio = new ServicioCliente();
-            RecargarGrilla(td,L,pr,p);
+            RecargarGrilla();
         }
-        private void RecargarGrilla(TipoDeDocumento td, Localidad L, Provincia pr, Pais p)
+        private void RecargarGrilla()
         {
             try
             {
-                lista = servicio.GetLista( td,  L,  pr,  p);
+                lista = servicio.GetLista();
                 HelperForm.MostrarDatosEnGrilla(DatosDataGridView, lista);
             }
             catch (Exception exception)

@@ -32,16 +32,16 @@ namespace VentaDeMiel2022.Servicio.Servicios
             }
         }
 
-        public TipoDeDocumento td;
-        public Localidad L;
-        public Provincia pr;
-        public Pais p;
-        public Orden orden;
-        public List<Cliente> GetLista(TipoDeDocumento td, Localidad L, Provincia pr, Pais p)
+        //public TipoDeDocumento td;
+        //public Localidad L;
+        //public Provincia pr;
+        //public Pais p;
+        //public Orden orden;
+        public List<Cliente> GetLista()
         {
             try
             {
-                return repositorio.GetLista(td,L,pr,p);
+                return repositorio.GetLista();
             }
             catch (Exception e)
             {

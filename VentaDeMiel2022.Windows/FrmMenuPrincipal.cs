@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VentaDeMiel2022.Servicio.Servicios.Facades;
 using VentaDeMiel2022.Servicios.Servicios.Facades;
 using VentaDeMiel2022.Windows.Ninject;
 

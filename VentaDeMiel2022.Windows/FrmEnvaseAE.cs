@@ -20,7 +20,7 @@ namespace VentaDeMiel2022.Windows
             base.OnLoad(e);
 
             //servicio=new ServicioTipoEnvases();
-            HelperCombos.CargarDatosComboTipos(ref TipoEnvasesComboBox);
+            HelperCombos.CargarDatosComboTipoEnvase(ref TipoEnvasesComboBox);
             if (envase != null)
             {
                 EnvaseTextBox.Text = envase.Descripcion;

@@ -16,7 +16,7 @@ namespace VentaDeMiel2022.Windows
 
         private void frmBuscarPorTipoDeEnvase_Load(object sender, EventArgs e)
         {
-            HelperCombos.CargarDatosComboTipos(ref TipoEnvasesComboBox);
+            HelperCombos.CargarDatosComboTipoEnvase(ref TipoEnvasesComboBox);
         }
 
         private void CancelarIconButton_Click(object sender, EventArgs e)

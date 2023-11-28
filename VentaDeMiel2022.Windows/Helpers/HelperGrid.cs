@@ -7,6 +7,8 @@ using System.Windows.Forms;
 using VentaDeMiel2022.Entidades.Entidades;
 using VentaDeMiel2022.Servicio.Servicios;
 using VentaDeMiel2022.Servicio.Servicios.Facades;
+using VentaDeMiel2022.Windows.Clases;
+using VentaDeMiel2022.Windows.UserControls;
 
 namespace VentaDeMiel2022.Windows.Helpers
 {
@@ -89,6 +91,20 @@ namespace VentaDeMiel2022.Windows.Helpers
                     r.Cells[1].Value = envase.TipoEnvase.Descripcion;
                     r.Cells[2].Value = envase.Precio.ToString("C");
                     r.Cells[3].Value = envase.Stock;
+                    break;
+                case DetalleVenta dt:
+                    r.Cells[0].Value = dt.Envase.Descripcion;
+                    r.Cells[1].Value = dt.Cliente.Nombre;
+                    r.Cells[2].Value = dt.Vendedor.Nombre;
+                    r.Cells[3].Value = dt.PrecioVenta;
+                    r.Cells[4].Value = dt.Cantidad;
+                    r.Cells[5].Value = dt.Cantidad * dt.PrecioVenta;
+                    break;
+                case ItemCarrito carrito:
+                    r.Cells[0].Value = carrito.Descripcion;
+                    r.Cells[1].Value = carrito.Precio.ToString("C");
+                    r.Cells[2].Value = carrito.Cantidad;
+                    r.Cells[3].Value = carrito.SubTotal;
                     break;
             }   
 

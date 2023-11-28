@@ -30,7 +30,7 @@ namespace VentaDeMiel2022.Windows.Clases
         public void Agregar(ItemCarrito item)
         {
             var itemInCarrito = listaItems
-                .SingleOrDefault(i => i.ProductoId == item.ProductoId);
+                .SingleOrDefault(i => i.EnvaseId == item.EnvaseId);
             if (itemInCarrito==null)
             {
                 listaItems.Add(item);
@@ -61,7 +61,7 @@ namespace VentaDeMiel2022.Windows.Clases
 
         public void QuitarUno(ItemCarrito item)
         {
-            var itemInCarrito = listaItems.SingleOrDefault(i => i.ProductoId == item.ProductoId);
+            var itemInCarrito = listaItems.SingleOrDefault(i => i.EnvaseId == item.EnvaseId);
             itemInCarrito.Cantidad--;
             if (itemInCarrito.Cantidad==0)
             {

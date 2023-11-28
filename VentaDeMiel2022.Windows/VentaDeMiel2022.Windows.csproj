@@ -45,6 +45,7 @@
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net48\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Ninject, Version=3.3.6.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.6\lib\net45\Ninject.dll</HintPath>
     </Reference>
@@ -97,6 +98,18 @@
     </Compile>
     <Compile Include="FrmClientes.Designer.cs">
       <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobro.Designer.cs">
+      <DependentUpon>frmCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleVenta.Designer.cs">
+      <DependentUpon>frmDetalleVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEnvases.cs">
       <SubType>Form</SubType>
@@ -151,6 +164,12 @@
     </Compile>
     <Compile Include="FrmProvinciaAE.Designer.cs">
       <DependentUpon>FrmProvinciaAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTarjetaDeCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTarjetaDeCredito.Designer.cs">
+      <DependentUpon>frmTarjetaDeCredito.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTipoEnvaseAE.cs">
       <SubType>Form</SubType>
@@ -209,6 +228,12 @@
     <Compile Include="FrmTipoEnvase.Designer.cs">
       <DependentUpon>FrmTipoEnvase.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucEnvase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucEnvase.Designer.cs">
+      <DependentUpon>ucEnvase.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmBuscarPorPais.resx">
       <DependentUpon>FrmBuscarPorPais.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +245,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCobro.resx">
+      <DependentUpon>frmCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleVenta.resx">
+      <DependentUpon>frmDetalleVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEnvases.resx">
       <DependentUpon>FrmEnvases.cs</DependentUpon>
@@ -245,6 +276,9 @@
     <EmbeddedResource Include="FrmProvinciaAE.resx">
       <DependentUpon>FrmProvinciaAE.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTarjetaDeCredito.resx">
+      <DependentUpon>frmTarjetaDeCredito.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTipoEnvaseAE.resx">
       <DependentUpon>FrmTipoEnvaseAE.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +294,9 @@
     <EmbeddedResource Include="FrmTiposDeDocumentosAE.resx">
       <DependentUpon>FrmTiposDeDocumentosAE.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentasAE.resx">
+      <DependentUpon>FrmVentasAE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -271,6 +308,9 @@
     </Compile>
     <EmbeddedResource Include="FrmTipoEnvase.resx">
       <DependentUpon>FrmTipoEnvase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucEnvase.resx">
+      <DependentUpon>ucEnvase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -286,7 +326,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\add_15px.png" />
+    <Content Include="Resources\american_express_50px.png" />
+    <Content Include="Resources\diners_club_50px.png" />
+    <Content Include="Resources\mastercard_50px.png" />
+    <Content Include="Resources\money_50px.png" />
+    <Content Include="Resources\remove_15px.png" />
+    <Content Include="Resources\visa_50px.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VentaDeMiel2022.Datos\VentaDeMiel2022.Datos.csproj">
       <Project>{93D53F62-7BDB-41D0-BD40-E57C73185B46}</Project>

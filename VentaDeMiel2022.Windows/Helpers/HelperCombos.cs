@@ -84,14 +84,16 @@ namespace VentaDeMiel2022.Windows.Helpers
             combo.ValueMember = "TipoDeDocumentoId";
             combo.SelectedIndex = 0;
         }
-        public static void CargarDatosComboTipos(ref ComboBox combo)
+        public static void CargarDatosComboTipoEnvase(ref ComboBox combo)
         {
-            IServicioTipoEnvase servicio = DI.Create<IServicioTipoEnvase>(); 
+
+
+            IServicioTipoEnvase servicio = new ServicioTipoEnvase();
             var lista = servicio.GetLista();
-            TipoEnvase tpDefault = new TipoEnvase() 
+            TipoEnvase tpDefault = new TipoEnvase()
             {
                 TipoEnvaseId = 0,
-                Descripcion = "Seleccione Tipo Envase"
+                Descripcion = "Seleccione un tipo de Envase"
             };
             lista.Insert(0, tpDefault);
             combo.DataSource = lista;
@@ -100,6 +102,37 @@ namespace VentaDeMiel2022.Windows.Helpers
             combo.SelectedIndex = 0;
         }
 
+        public static void CargarDatosComboClientes(ref ComboBox combo)
+        {
+            IServicioClientes servicio = DI.Create<IServicioClientes>(); 
+            var lista = servicio.GetLista();
+            Cliente tpDefault = new Cliente() 
+            {
+                ClienteId = 0,
+                Nombre = "Seleccione Cliente"
+            };
+            lista.Insert(0, tpDefault);
+            combo.DataSource = lista;
+            combo.DisplayMember = "Nombre";
+            combo.ValueMember = "ClienteId";
+            combo.SelectedIndex = 0;
+        }
+        public static void CargarDatosComboVendedores(ref ComboBox combo)
+        {
+       
+            IServicioVendedor servicio = DI.Create<IServicioVendedor>();
+            var lista = servicio.GetLista(Orden.ASC);
+            Vendedor tpDefault = new Vendedor()
+            {
+                VendedorId = 0,
+                Nombre = "Seleccione Vendedor"
+            };
+            lista.Insert(0, tpDefault);
+            combo.DataSource = lista;
+            combo.DisplayMember = "Nombre";
+            combo.ValueMember = "VendedorId";
+            combo.SelectedIndex = 0;
+        }
         public static void CargarDatosComboMeses(ref ComboBox combo)
         {
             for (int mes = 1; mes <= 12; mes++)

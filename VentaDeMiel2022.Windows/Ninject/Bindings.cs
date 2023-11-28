@@ -27,6 +27,12 @@ namespace VentaDeMiel2022.Windows.Ninject
             Bind<IRepositorioVentas>().To<RepositorioVentas>();
             Bind<IRepositorioDetalleVentas>().To<RepositorioDetalleVentas>();
 
+            Bind<IRepositorioCliente>().To<RepositorioClientes>();
+            Bind<IServicioClientes>().To<ServicioCliente>();
+
+            Bind<IRepositorioVendedor>().To<RepositorioVendedores>();
+            Bind<IServicioVendedor>().To<ServicioVendedor>();
+
             Bind<IServicioVentas>().To<ServicioVentas>();
 
 

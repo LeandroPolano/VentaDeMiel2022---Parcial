@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using VentaDeMiel2022.Datos;
+using VentaDeMiel2022.Datos.Repositorio.Facade;
 using VentaDeMiel2022.Datos.Repositorios;
 using VentaDeMiel2022.Datos.Repositorios.Facades;
 using VentaDeMiel2022.Entidades.Entidades;

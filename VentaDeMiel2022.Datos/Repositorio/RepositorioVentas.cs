@@ -21,15 +21,11 @@ namespace VentaDeMiel2022.Datos.Repositorios
         {
             try
             {
-                return context.Ventas
-                    .AsNoTracking()
-                    .ToList();
-
+                return context.Ventas.ToList();
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
-
             }
         }
 

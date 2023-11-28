@@ -57,7 +57,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
             }
         }
 
-        public List<Cliente> GetLista(TipoDeDocumento td = null, Localidad L= null, Provincia pr= null, Pais p=null)
+        public List<Cliente> GetLista()
         {
             try
             {
@@ -68,39 +68,7 @@ namespace VentaDeMiel2022.Datos.Repositorio
                     .Include(p => p.NombreProvincia)
                     .Include(p => p.NombrePais)
                     .AsNoTracking().ToList();
-                //return context.Clientes.Include(p => p.NombreLocalidad).AsNoTracking().ToList()
-                //        .Include(p => p.NombreProvincia).AsNoTracking().ToList()
-                //        .Include(p => p.NombrePais).AsNoTracking().ToList();
-
-                //return lista;
-                //    var query = context.Clientes.Include(td.Descripcion).AsNoTracking().ToList();
-                //    var localidadDbQuery = context.Clientes.Include(L.NombreLocalidad).AsNoTracking().ToList();
-                //    var provinciaDbQuery = context.Clientes.Include(pr.NombreProvincia).AsNoTracking().ToList();
-                //    var paisDbQuery = context.Clientes.Include(p.NombrePais).AsNoTracking().ToList();
-
-
-                //if (td != null && L != null && pr != null && p != null)
-                //{
-                //    query = (DbQuery<Cliente>)query.Where(d => d.TipoDeDocumentoId == d.TipoDeDocumentoId);
-                //    localidadDbQuery = (DbQuery<Cliente>)localidadDbQuery.Where(d => d.LocalidadId == d.LocalidadId);
-                //    provinciaDbQuery = (DbQuery<Cliente>) provinciaDbQuery.Where(d => d.ProvinciaId == d.ProvinciaId);
-                //    paisDbQuery = (DbQuery<Cliente>) paisDbQuery.Where(d => d.PaisId == d.PaisId);
-                //}
-
-                //switch (orden)
-                //{
-                //    case Orden.BD:
-                //        break;
-                //    case Orden.AZ:
-                //        query = (DbQuery<Cliente>) query.OrderBy(p => p.Nombre);
-                //        break;
-                //    case Orden.ZA:
-                //        query = (DbQuery<Cliente>) query.OrderByDescending(p => p.Nombre);
-                //        break;
-
-                //    default:
-                //        throw new ArgumentOutOfRangeException(nameof(orden), orden, null);
-                //}
+              
             }
             catch (Exception e)
             {

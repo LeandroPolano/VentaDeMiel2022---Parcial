@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Transactions;
 using VentaDeMiel2022.Datos;
 using VentaDeMiel2022.Datos.Repositorio;
 using VentaDeMiel2022.Datos.Repositorio.Facade;
+using VentaDeMiel2022.Datos.Repositorios.Facades;
 using VentaDeMiel2022.Entidades.Entidades;
 using VentaDeMiel2022.Servicios.Servicios.Facades;
 
@@ -13,14 +15,14 @@ namespace VentaDeMiel2022.Servicios.Servicios
     {
         private readonly VentaDeMiel2022DbContext context;
         private readonly IRepositorioVentas repoVentas;
-        //private readonly IRepositorioDetalleVentas repoDetalle;
+        private readonly IRepositorioDetalleVentas repoDetalle;
         private readonly IUnitOfWork unitOfWork;
 
-        public ServicioVentas(VentaDeMiel2022DbContext context, IRepositorioVentas repoVentas/*, IRepositorioDetalleVentas repoDetalle*/, IUnitOfWork unitOfWork)
+        public ServicioVentas(VentaDeMiel2022DbContext context, IRepositorioVentas repoVentas, IRepositorioDetalleVentas repoDetalle, IUnitOfWork unitOfWork)
         {
             this.context = context;
             this.repoVentas = repoVentas;
-            //this.repoDetalle = repoDetalle;
+            this.repoDetalle = repoDetalle;
             this.unitOfWork = unitOfWork;
         }
 
@@ -34,7 +36,7 @@ namespace VentaDeMiel2022.Servicios.Servicios
         {
             try
             {
-                return repoVentas.GetVentas();
+                return context.Ventas.ToList();
             }
             catch (Exception e)
             {
@@ -58,12 +60,12 @@ namespace VentaDeMiel2022.Servicios.Servicios
                     unitOfWork.Save();
                     venta.VentaId = ventaAux.VentaId;
                     //context.SaveChanges();
-                    //foreach (var item in venta.DetalleVentas)
-                    //{
-                    //    item.VentaId = venta.VentaId;
-                    //    repoDetalle.Guardar(item);
+                    foreach (var item in venta.DetalleVentas)
+                    {
+                        item.VentaId = venta.VentaId;
+                        repoDetalle.Guardar(item);
 
-                    //}
+                    }
 
                     //context.SaveChanges();
                     unitOfWork.Save();
@@ -91,21 +93,21 @@ namespace VentaDeMiel2022.Servicios.Servicios
             }
 
         }
-        
-        //public List<DetalleVenta> GetDetalleVenta(int ventaId)
-        //{
-        //    try
-        //    {
 
-        //        return repoDetalle.GetDetalleVenta(ventaId);
+        public List<DetalleVenta> GetDetalleVenta(int ventaId)
+        {
+            try
+            {
+
+                return repoDetalle.GetDetalleVenta(ventaId);
 
 
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        throw new Exception(e.Message);
-        //    }
-        //}
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
     }
 }

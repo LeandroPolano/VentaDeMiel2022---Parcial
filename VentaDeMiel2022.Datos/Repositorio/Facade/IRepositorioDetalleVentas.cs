@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using VentaDeMiel2022.Entidades.Entidades;
 
-namespace VentaDeMiel2022.Datos.Repositorio.Facade
+namespace VentaDeMiel2022.Datos.Repositorios.Facades
 {
     public interface IRepositorioDetalleVentas
     {
+        void Guardar(DetalleVenta detalleVenta);
+        List<DetalleVenta> GetDetalleVenta(int ventaId);
     }
 }
