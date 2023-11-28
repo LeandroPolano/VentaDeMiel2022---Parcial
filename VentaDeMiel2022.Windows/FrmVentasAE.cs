@@ -243,6 +243,7 @@ namespace VentaDeMiel2022.Windows
 
         private DetalleVenta ConstruirDetalleVenta(ItemCarrito item)
         {
+
             return new DetalleVenta
             {
                 
