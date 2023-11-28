@@ -91,6 +91,7 @@
             this.CancelarIconButton.Text = "Cancelar";
             this.CancelarIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CancelarIconButton.UseVisualStyleBackColor = false;
+            this.CancelarIconButton.Click += new System.EventHandler(this.CancelarIconButton_Click_1);
             // 
             // CantidadLabel
             // 

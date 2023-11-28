@@ -33,6 +33,7 @@ namespace VentaDeMiel2022.Windows
        
         private void frmVentasAE_Load2()
         {
+
             var servicioClientes = DI.Create<IServicioClientes>();
             var listaClientes = servicioClientes.GetLista();
 
@@ -113,6 +114,7 @@ namespace VentaDeMiel2022.Windows
 
         private void AgregarEnvase(object sender, EventArgs e)
         {
+
             var envaseId = (int)((Button)sender).Tag;
             var envase = servicioEnvase.GetEnvasePorId(envaseId);
 
@@ -226,6 +228,11 @@ namespace VentaDeMiel2022.Windows
             };
             DialogResult = DialogResult.OK;
 
+
+           
+            Carrito.GetInstancia().VaciarCarrito();
+            HelperGrid.LimpiarGrilla(CarritoDataGridView);
+            ActualizarTotales(0, 0);
         }
 
         private List<DetalleVenta> ConstruirDetallesVenta(List<ItemCarrito> items)
@@ -261,6 +268,16 @@ namespace VentaDeMiel2022.Windows
             return venta;
         }
 
-      
+        private void CancelarIconButton_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dr = HelperMensaje.Mensaje("¿Desea cancelar la orden?", "Confirmar");
+            if (dr == DialogResult.No)
+            {
+                return;
+            }
+            Carrito.GetInstancia().VaciarCarrito();
+            HelperGrid.LimpiarGrilla(CarritoDataGridView);
+            ActualizarTotales(0, 0);
+        }
     }
 }
