@@ -245,9 +245,11 @@ namespace VentaDeMiel2022.Windows
         {
             return new DetalleVenta
             {
+                
+
                 EnvaseId = item.EnvaseId,
-                //ClienteId = item.ClienteId,
-                //VendedorId = item.VendedorId,
+                ClienteId = ((Cliente)ClientesComboBox.SelectedItem).ClienteId,
+                VendedorId = ((Vendedor)VendedoresComboBox.SelectedItem).VendedorId,
                 PrecioVenta = item.Precio,
                 Cantidad = item.Cantidad
             };

@@ -57,7 +57,7 @@ namespace VentaDeMiel2022.Servicios.Servicios
                         Total = venta.Total
                     };
                     repoVentas.Guardar(ventaAux);
-                    unitOfWork.Save();
+                    context.SaveChanges();
                     venta.VentaId = ventaAux.VentaId;
                     //context.SaveChanges();
                     foreach (var item in venta.DetalleVentas)
@@ -68,7 +68,8 @@ namespace VentaDeMiel2022.Servicios.Servicios
                     }
 
                     //context.SaveChanges();
-                    unitOfWork.Save();
+                    context.SaveChanges();
+
                     scope.Complete();
 
                 }
