@@ -53,6 +53,7 @@
             this.colSubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAgregar = new System.Windows.Forms.DataGridViewImageColumn();
             this.colQuitar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.CerrarButton = new FontAwesome.Sharp.IconButton();
             this.TotalPanel.SuspendLayout();
             this.CarritoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CarritoDataGridView)).BeginInit();
@@ -178,6 +179,7 @@
             // CarritoPanel
             // 
             this.CarritoPanel.BackColor = System.Drawing.Color.ForestGreen;
+            this.CarritoPanel.Controls.Add(this.CerrarButton);
             this.CarritoPanel.Controls.Add(this.label2);
             this.CarritoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.CarritoPanel.Location = new System.Drawing.Point(0, 0);
@@ -378,12 +380,30 @@
             this.colQuitar.ReadOnly = true;
             this.colQuitar.Width = 20;
             // 
+            // CerrarButton
+            // 
+            this.CerrarButton.BackColor = System.Drawing.Color.Transparent;
+            this.CerrarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CerrarButton.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            this.CerrarButton.IconColor = System.Drawing.Color.Red;
+            this.CerrarButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.CerrarButton.Location = new System.Drawing.Point(543, 0);
+            this.CerrarButton.Margin = new System.Windows.Forms.Padding(4);
+            this.CerrarButton.Name = "CerrarButton";
+            this.CerrarButton.Size = new System.Drawing.Size(59, 59);
+            this.CerrarButton.TabIndex = 12;
+            this.CerrarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.CerrarButton.UseVisualStyleBackColor = false;
+            this.CerrarButton.Click += new System.EventHandler(this.CerrarButton_Click);
+            // 
             // frmVentasAE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmVentasAE";
             this.Text = "FrmVentasAE";
             this.Load += new System.EventHandler(this.frmVentasAE_Load);
@@ -428,5 +448,6 @@
         private System.Windows.Forms.DataGridViewImageColumn colQuitar;
         private System.Windows.Forms.ComboBox ClientesComboBox;
         private System.Windows.Forms.ComboBox VendedoresComboBox;
+        private FontAwesome.Sharp.IconButton CerrarButton;
     }
 }

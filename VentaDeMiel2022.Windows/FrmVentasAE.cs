@@ -279,5 +279,13 @@ namespace VentaDeMiel2022.Windows
             HelperGrid.LimpiarGrilla(CarritoDataGridView);
             ActualizarTotales(0, 0);
         }
+
+        private void CerrarButton_Click(object sender, EventArgs e)
+        {
+            Carrito.GetInstancia().VaciarCarrito();
+            HelperGrid.LimpiarGrilla(CarritoDataGridView);
+            ActualizarTotales(0, 0);
+            Close();
+        }
     }
 }
