@@ -252,6 +252,9 @@
     <EmbeddedResource Include="frmDetalleVenta.resx">
       <DependentUpon>frmDetalleVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnvaseAE.resx">
+      <DependentUpon>FrmEnvaseAE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEnvases.resx">
       <DependentUpon>FrmEnvases.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +297,9 @@
     <EmbeddedResource Include="FrmTiposDeDocumentosAE.resx">
       <DependentUpon>FrmTiposDeDocumentosAE.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentas.resx">
+      <DependentUpon>FrmVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmVentasAE.resx">
       <DependentUpon>FrmVentasAE.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,6 +311,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="FrmTipoEnvase.resx">
       <DependentUpon>FrmTipoEnvase.cs</DependentUpon>
@@ -328,11 +335,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\add_15px.png" />
+    <None Include="Resources\visa_50px1.png" />
+    <None Include="Resources\add_15px1.png" />
     <Content Include="Resources\american_express_50px.png" />
+    <None Include="Resources\american_express_50px1.png" />
     <Content Include="Resources\diners_club_50px.png" />
+    <None Include="Resources\diners_club_50px1.png" />
     <Content Include="Resources\mastercard_50px.png" />
+    <None Include="Resources\mastercard_50px1.png" />
     <Content Include="Resources\money_50px.png" />
+    <None Include="Resources\money_50px1.png" />
     <Content Include="Resources\remove_15px.png" />
+    <None Include="Resources\remove_15px1.png" />
     <Content Include="Resources\visa_50px.png" />
   </ItemGroup>
   <ItemGroup>

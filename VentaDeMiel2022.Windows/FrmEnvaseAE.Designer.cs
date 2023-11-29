@@ -55,9 +55,10 @@
             this.CancelarIconButton.IconChar = FontAwesome.Sharp.IconChar.Ban;
             this.CancelarIconButton.IconColor = System.Drawing.Color.White;
             this.CancelarIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.CancelarIconButton.Location = new System.Drawing.Point(310, 212);
+            this.CancelarIconButton.Location = new System.Drawing.Point(413, 261);
+            this.CancelarIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelarIconButton.Name = "CancelarIconButton";
-            this.CancelarIconButton.Size = new System.Drawing.Size(121, 59);
+            this.CancelarIconButton.Size = new System.Drawing.Size(161, 73);
             this.CancelarIconButton.TabIndex = 7;
             this.CancelarIconButton.Text = "Cancelar";
             this.CancelarIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -68,12 +69,13 @@
             // 
             this.OKIconButton.BackColor = System.Drawing.Color.RoyalBlue;
             this.OKIconButton.ForeColor = System.Drawing.Color.White;
-            this.OKIconButton.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.OKIconButton.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
             this.OKIconButton.IconColor = System.Drawing.Color.White;
             this.OKIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.OKIconButton.Location = new System.Drawing.Point(62, 212);
+            this.OKIconButton.Location = new System.Drawing.Point(83, 261);
+            this.OKIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OKIconButton.Name = "OKIconButton";
-            this.OKIconButton.Size = new System.Drawing.Size(121, 59);
+            this.OKIconButton.Size = new System.Drawing.Size(161, 73);
             this.OKIconButton.TabIndex = 8;
             this.OKIconButton.Text = "Guardar";
             this.OKIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -82,35 +84,39 @@
             // 
             // EnvaseTextBox
             // 
-            this.EnvaseTextBox.Location = new System.Drawing.Point(168, 39);
+            this.EnvaseTextBox.Location = new System.Drawing.Point(224, 48);
+            this.EnvaseTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EnvaseTextBox.MaxLength = 200;
             this.EnvaseTextBox.Name = "EnvaseTextBox";
-            this.EnvaseTextBox.Size = new System.Drawing.Size(263, 20);
+            this.EnvaseTextBox.Size = new System.Drawing.Size(349, 22);
             this.EnvaseTextBox.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 42);
+            this.label1.Location = new System.Drawing.Point(79, 52);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Envase:";
             // 
             // PrecioVtaTextBox
             // 
-            this.PrecioVtaTextBox.Location = new System.Drawing.Point(168, 111);
+            this.PrecioVtaTextBox.Location = new System.Drawing.Point(224, 137);
+            this.PrecioVtaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PrecioVtaTextBox.MaxLength = 200;
             this.PrecioVtaTextBox.Name = "PrecioVtaTextBox";
-            this.PrecioVtaTextBox.Size = new System.Drawing.Size(263, 20);
+            this.PrecioVtaTextBox.Size = new System.Drawing.Size(349, 22);
             this.PrecioVtaTextBox.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 79);
+            this.label2.Location = new System.Drawing.Point(79, 97);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.Size = new System.Drawing.Size(106, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Tipo de Envase:";
             // 
@@ -118,39 +124,48 @@
             // 
             this.TipoEnvasesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TipoEnvasesComboBox.FormattingEnabled = true;
-            this.TipoEnvasesComboBox.Location = new System.Drawing.Point(168, 76);
+            this.TipoEnvasesComboBox.Location = new System.Drawing.Point(224, 94);
+            this.TipoEnvasesComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TipoEnvasesComboBox.Name = "TipoEnvasesComboBox";
-            this.TipoEnvasesComboBox.Size = new System.Drawing.Size(263, 21);
+            this.TipoEnvasesComboBox.Size = new System.Drawing.Size(349, 24);
             this.TipoEnvasesComboBox.TabIndex = 11;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 117);
+            this.label3.Location = new System.Drawing.Point(83, 144);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 12;
             this.label3.Text = "Precio Vta:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 152);
+            this.label4.Location = new System.Drawing.Point(83, 187);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 12;
             this.label4.Text = "Stock:";
             // 
             // StockNumericUpDown
             // 
-            this.StockNumericUpDown.Location = new System.Drawing.Point(168, 152);
+            this.StockNumericUpDown.Location = new System.Drawing.Point(224, 187);
+            this.StockNumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StockNumericUpDown.Maximum = new decimal(new int[] {
+            150,
+            0,
+            0,
+            0});
             this.StockNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.StockNumericUpDown.Name = "StockNumericUpDown";
-            this.StockNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this.StockNumericUpDown.Size = new System.Drawing.Size(160, 22);
             this.StockNumericUpDown.TabIndex = 13;
             this.StockNumericUpDown.Value = new decimal(new int[] {
             1,
@@ -164,9 +179,10 @@
             // 
             // ImagenPictureBox
             // 
-            this.ImagenPictureBox.Location = new System.Drawing.Point(505, 39);
+            this.ImagenPictureBox.Location = new System.Drawing.Point(673, 48);
+            this.ImagenPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ImagenPictureBox.Name = "ImagenPictureBox";
-            this.ImagenPictureBox.Size = new System.Drawing.Size(106, 91);
+            this.ImagenPictureBox.Size = new System.Drawing.Size(141, 112);
             this.ImagenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImagenPictureBox.TabIndex = 14;
             this.ImagenPictureBox.TabStop = false;
@@ -179,9 +195,10 @@
             this.BuscarIconButton.IconColor = System.Drawing.Color.White;
             this.BuscarIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BuscarIconButton.IconSize = 32;
-            this.BuscarIconButton.Location = new System.Drawing.Point(490, 136);
+            this.BuscarIconButton.Location = new System.Drawing.Point(653, 167);
+            this.BuscarIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BuscarIconButton.Name = "BuscarIconButton";
-            this.BuscarIconButton.Size = new System.Drawing.Size(134, 36);
+            this.BuscarIconButton.Size = new System.Drawing.Size(179, 44);
             this.BuscarIconButton.TabIndex = 7;
             this.BuscarIconButton.Text = "Buscar";
             this.BuscarIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -192,11 +209,11 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // frmEnvaseAE
+            // FrmEnvaseAE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 297);
+            this.ClientSize = new System.Drawing.Size(849, 356);
             this.ControlBox = false;
             this.Controls.Add(this.ImagenPictureBox);
             this.Controls.Add(this.StockNumericUpDown);
@@ -210,9 +227,10 @@
             this.Controls.Add(this.BuscarIconButton);
             this.Controls.Add(this.CancelarIconButton);
             this.Controls.Add(this.OKIconButton);
-            this.MaximumSize = new System.Drawing.Size(655, 336);
-            this.MinimumSize = new System.Drawing.Size(655, 336);
-            this.Name = "frmEnvaseAE";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(867, 403);
+            this.MinimumSize = new System.Drawing.Size(867, 403);
+            this.Name = "FrmEnvaseAE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEnvaseAE";
             ((System.ComponentModel.ISupportInitialize)(this.StockNumericUpDown)).EndInit();

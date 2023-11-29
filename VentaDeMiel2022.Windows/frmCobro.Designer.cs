@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.VisaButton = new System.Windows.Forms.Button();
             this.EfectivoButton = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -48,9 +45,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.VisaButton);
             this.groupBox2.Controls.Add(this.EfectivoButton);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -63,41 +57,9 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Medios de Pago";
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(568, 68);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(111, 110);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Diners";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(432, 68);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(111, 110);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Amex";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(297, 68);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 110);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Master";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // VisaButton
             // 
+            this.VisaButton.Image = global::VentaDeMiel2022.Windows.Properties.Resources.visa_50px;
             this.VisaButton.Location = new System.Drawing.Point(163, 68);
             this.VisaButton.Margin = new System.Windows.Forms.Padding(4);
             this.VisaButton.Name = "VisaButton";
@@ -106,9 +68,11 @@
             this.VisaButton.Text = "Visa";
             this.VisaButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.VisaButton.UseVisualStyleBackColor = true;
+            this.VisaButton.Click += new System.EventHandler(this.VisaButton_Click);
             // 
             // EfectivoButton
             // 
+            this.EfectivoButton.Image = global::VentaDeMiel2022.Windows.Properties.Resources.money_50px;
             this.EfectivoButton.Location = new System.Drawing.Point(32, 68);
             this.EfectivoButton.Margin = new System.Windows.Forms.Padding(4);
             this.EfectivoButton.Name = "EfectivoButton";
@@ -117,6 +81,7 @@
             this.EfectivoButton.Text = "Efectivo";
             this.EfectivoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.EfectivoButton.UseVisualStyleBackColor = true;
+            this.EfectivoButton.Click += new System.EventHandler(this.EfectivoButton_Click);
             // 
             // groupBox4
             // 
@@ -205,6 +170,7 @@
             this.MaximumSize = new System.Drawing.Size(1085, 886);
             this.MinimumSize = new System.Drawing.Size(1085, 886);
             this.Name = "frmCobro";
+            this.Load += new System.EventHandler(this.frmCobro_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -216,9 +182,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button VisaButton;
         private System.Windows.Forms.Button EfectivoButton;
         private System.Windows.Forms.GroupBox groupBox4;

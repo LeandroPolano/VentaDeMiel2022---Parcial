@@ -58,5 +58,9 @@ namespace VentaDeMiel2022.Windows
                 return;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
