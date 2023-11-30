@@ -261,8 +261,7 @@ namespace VentaDeMiel2022.Windows
             // 
             // FrmVendedoresAE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(552, 527);
             this.ControlBox = false;
             this.Controls.Add(this.FechaDeNacimientoDateTimePicker);

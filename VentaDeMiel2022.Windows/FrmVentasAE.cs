@@ -154,35 +154,7 @@ namespace VentaDeMiel2022.Windows
             MostrarListaEnLayout();
         }
         private Cliente cliente;
-        private void ClientesComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (ClientesComboBox.SelectedIndex > 0)
-            {
-                cliente = (Cliente)ClientesComboBox.SelectedItem;
-            }
-            else
-            {
-                cliente = null;
-            }
-
-            listaCliente = servicioCliente.GetLista();
-            MostrarListaEnLayout();
-        }
-        private Vendedor vendedor;
-        private void VendedoresComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (VendedoresComboBox.SelectedIndex > 0)
-            {
-                vendedor = (Vendedor)VendedoresComboBox.SelectedItem;
-            }
-            else
-            {
-                vendedor = null;
-            }
-
-            listaVendedor = servicioVendedor.GetLista(Orden.BD);
-            MostrarListaEnLayout();
-        }
+   
 
         private void CarritoDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -213,28 +185,53 @@ namespace VentaDeMiel2022.Windows
 
         private void OKIconButton_Click(object sender, EventArgs e)
         {
-            if (Carrito.GetInstancia().GetCantidad() == 0)
+            if (ValidarDatos());
             {
-                return;
+
+
+                if (Carrito.GetInstancia().GetCantidad() == 0)
+                {
+                    return;
+                }
+
+                venta = new Venta
+                {
+
+                    FechaVenta = DateTime.Now,
+                    Total = Carrito.GetInstancia().GetTotal(),
+                    Estado = EstadoVenta.Proceso,
+                    DetalleVentas = ConstruirDetallesVenta(Carrito.GetInstancia().GetItems)
+                };
+                DialogResult = DialogResult.OK;
+
+
+
+                Carrito.GetInstancia().VaciarCarrito();
+                HelperGrid.LimpiarGrilla(CarritoDataGridView);
+                ActualizarTotales(0, 0);
+
             }
-
-            venta = new Venta
-            {
-
-                FechaVenta = DateTime.Now,
-                Total = Carrito.GetInstancia().GetTotal(),
-                Estado = EstadoVenta.Proceso,
-                DetalleVentas = ConstruirDetallesVenta(Carrito.GetInstancia().GetItems)
-            };
-            DialogResult = DialogResult.OK;
-
-
-           
-            Carrito.GetInstancia().VaciarCarrito();
-            HelperGrid.LimpiarGrilla(CarritoDataGridView);
-            ActualizarTotales(0, 0);
         }
 
+        private bool ValidarDatos()
+        {
+            bool valido = true;
+            errorProvider3.Clear();
+           
+            if (VendedoresComboBox.SelectedIndex == 0)
+            {
+                valido = false;
+                errorProvider3.SetError(VendedoresComboBox, "Debe seleccionar un Vendedor");
+            }
+            if (ClientesComboBox.SelectedIndex == 0)
+            {
+                valido = false;
+                errorProvider3.SetError(ClientesComboBox, "Debe seleccionar un Cliente");
+            }
+           
+
+            return valido;
+        }
         private List<DetalleVenta> ConstruirDetallesVenta(List<ItemCarrito> items)
         {
             var lista = new List<DetalleVenta>();

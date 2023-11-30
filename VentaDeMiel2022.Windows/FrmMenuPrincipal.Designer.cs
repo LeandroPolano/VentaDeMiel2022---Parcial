@@ -225,7 +225,7 @@ namespace VentaDeMiel2022.Windows
             // FrmMenuPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoSize = true;
+            this.AutoSize = false;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(516, 536);
             this.ControlBox = false;

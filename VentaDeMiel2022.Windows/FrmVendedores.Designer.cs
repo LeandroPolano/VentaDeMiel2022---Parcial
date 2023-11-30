@@ -40,14 +40,6 @@ namespace VentaDeMiel2022.Windows
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DatosDataGridView = new System.Windows.Forms.DataGridView();
-            this.NuevoIconButton = new System.Windows.Forms.Button();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.PrecioDescIconButton = new FontAwesome.Sharp.IconButton();
-            this.OredenarAZPorProductoiconButton = new FontAwesome.Sharp.IconButton();
-            this.FiltrariconButton = new FontAwesome.Sharp.IconButton();
-            this.CerrarButton = new System.Windows.Forms.Button();
-            this.EditarIconButton = new System.Windows.Forms.Button();
-            this.BorrarIconButton = new System.Windows.Forms.Button();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLocalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +48,14 @@ namespace VentaDeMiel2022.Windows
             this.colTelefonoFijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTelefonoMovil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCorreoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NuevoIconButton = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.PrecioDescIconButton = new FontAwesome.Sharp.IconButton();
+            this.OredenarAZPorProductoiconButton = new FontAwesome.Sharp.IconButton();
+            this.FiltrariconButton = new FontAwesome.Sharp.IconButton();
+            this.CerrarButton = new System.Windows.Forms.Button();
+            this.EditarIconButton = new System.Windows.Forms.Button();
+            this.BorrarIconButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DatosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -101,6 +101,94 @@ namespace VentaDeMiel2022.Windows
             this.DatosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DatosDataGridView.Size = new System.Drawing.Size(1827, 447);
             this.DatosDataGridView.TabIndex = 0;
+            // 
+            // colNombre
+            // 
+            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colNombre.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.MinimumWidth = 6;
+            this.colNombre.Name = "colNombre";
+            this.colNombre.ReadOnly = true;
+            this.colNombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colApellido
+            // 
+            this.colApellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colApellido.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colApellido.HeaderText = "Apellido";
+            this.colApellido.MinimumWidth = 6;
+            this.colApellido.Name = "colApellido";
+            this.colApellido.ReadOnly = true;
+            this.colApellido.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colLocalidad
+            // 
+            this.colLocalidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colLocalidad.DefaultCellStyle = dataGridViewCellStyle5;
+            this.colLocalidad.HeaderText = "FechaNacimiento";
+            this.colLocalidad.MinimumWidth = 6;
+            this.colLocalidad.Name = "colLocalidad";
+            this.colLocalidad.ReadOnly = true;
+            this.colLocalidad.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colNroDocumento
+            // 
+            this.colNroDocumento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colNroDocumento.DefaultCellStyle = dataGridViewCellStyle6;
+            this.colNroDocumento.HeaderText = "Numero de documento";
+            this.colNroDocumento.MinimumWidth = 6;
+            this.colNroDocumento.Name = "colNroDocumento";
+            this.colNroDocumento.ReadOnly = true;
+            this.colNroDocumento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colDireccion
+            // 
+            this.colDireccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colDireccion.DefaultCellStyle = dataGridViewCellStyle7;
+            this.colDireccion.HeaderText = "Direccion";
+            this.colDireccion.MinimumWidth = 6;
+            this.colDireccion.Name = "colDireccion";
+            this.colDireccion.ReadOnly = true;
+            this.colDireccion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colTelefonoFijo
+            // 
+            this.colTelefonoFijo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colTelefonoFijo.DefaultCellStyle = dataGridViewCellStyle8;
+            this.colTelefonoFijo.HeaderText = "Telefono Fijo";
+            this.colTelefonoFijo.MinimumWidth = 6;
+            this.colTelefonoFijo.Name = "colTelefonoFijo";
+            this.colTelefonoFijo.ReadOnly = true;
+            this.colTelefonoFijo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colTelefonoMovil
+            // 
+            this.colTelefonoMovil.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colTelefonoMovil.DefaultCellStyle = dataGridViewCellStyle9;
+            this.colTelefonoMovil.HeaderText = "Telefono Movil";
+            this.colTelefonoMovil.MinimumWidth = 6;
+            this.colTelefonoMovil.Name = "colTelefonoMovil";
+            this.colTelefonoMovil.ReadOnly = true;
+            this.colTelefonoMovil.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colCorreoElectronico
+            // 
+            this.colCorreoElectronico.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("HP Simplified", 10.8F);
+            this.colCorreoElectronico.DefaultCellStyle = dataGridViewCellStyle10;
+            this.colCorreoElectronico.HeaderText = "Correo Electronico";
+            this.colCorreoElectronico.MinimumWidth = 6;
+            this.colCorreoElectronico.Name = "colCorreoElectronico";
+            this.colCorreoElectronico.ReadOnly = true;
+            this.colCorreoElectronico.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // NuevoIconButton
             // 
@@ -228,98 +316,9 @@ namespace VentaDeMiel2022.Windows
             this.BorrarIconButton.UseVisualStyleBackColor = true;
             this.BorrarIconButton.Click += new System.EventHandler(this.BorrarIconButton_Click);
             // 
-            // colNombre
-            // 
-            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colNombre.DefaultCellStyle = dataGridViewCellStyle3;
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.MinimumWidth = 6;
-            this.colNombre.Name = "colNombre";
-            this.colNombre.ReadOnly = true;
-            this.colNombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colApellido
-            // 
-            this.colApellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colApellido.DefaultCellStyle = dataGridViewCellStyle4;
-            this.colApellido.HeaderText = "Apellido";
-            this.colApellido.MinimumWidth = 6;
-            this.colApellido.Name = "colApellido";
-            this.colApellido.ReadOnly = true;
-            this.colApellido.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colLocalidad
-            // 
-            this.colLocalidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colLocalidad.DefaultCellStyle = dataGridViewCellStyle5;
-            this.colLocalidad.HeaderText = "FechaNacimiento";
-            this.colLocalidad.MinimumWidth = 6;
-            this.colLocalidad.Name = "colLocalidad";
-            this.colLocalidad.ReadOnly = true;
-            this.colLocalidad.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colNroDocumento
-            // 
-            this.colNroDocumento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colNroDocumento.DefaultCellStyle = dataGridViewCellStyle6;
-            this.colNroDocumento.HeaderText = "Numero de documento";
-            this.colNroDocumento.MinimumWidth = 6;
-            this.colNroDocumento.Name = "colNroDocumento";
-            this.colNroDocumento.ReadOnly = true;
-            this.colNroDocumento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colDireccion
-            // 
-            this.colDireccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colDireccion.DefaultCellStyle = dataGridViewCellStyle7;
-            this.colDireccion.HeaderText = "Direccion";
-            this.colDireccion.MinimumWidth = 6;
-            this.colDireccion.Name = "colDireccion";
-            this.colDireccion.ReadOnly = true;
-            this.colDireccion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colTelefonoFijo
-            // 
-            this.colTelefonoFijo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colTelefonoFijo.DefaultCellStyle = dataGridViewCellStyle8;
-            this.colTelefonoFijo.HeaderText = "Telefono Fijo";
-            this.colTelefonoFijo.MinimumWidth = 6;
-            this.colTelefonoFijo.Name = "colTelefonoFijo";
-            this.colTelefonoFijo.ReadOnly = true;
-            this.colTelefonoFijo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colTelefonoMovil
-            // 
-            this.colTelefonoMovil.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colTelefonoMovil.DefaultCellStyle = dataGridViewCellStyle9;
-            this.colTelefonoMovil.HeaderText = "Telefono Movil";
-            this.colTelefonoMovil.MinimumWidth = 6;
-            this.colTelefonoMovil.Name = "colTelefonoMovil";
-            this.colTelefonoMovil.ReadOnly = true;
-            this.colTelefonoMovil.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colCorreoElectronico
-            // 
-            this.colCorreoElectronico.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("HP Simplified", 10.8F);
-            this.colCorreoElectronico.DefaultCellStyle = dataGridViewCellStyle10;
-            this.colCorreoElectronico.HeaderText = "Correo Electronico";
-            this.colCorreoElectronico.MinimumWidth = 6;
-            this.colCorreoElectronico.Name = "colCorreoElectronico";
-            this.colCorreoElectronico.ReadOnly = true;
-            this.colCorreoElectronico.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
             // FrmVendedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1827, 551);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FrmVendedores";

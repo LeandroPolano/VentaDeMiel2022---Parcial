@@ -163,9 +163,17 @@ namespace VentaDeMiel2022.Windows
 
             var r = DatosDataGridView.SelectedRows[0];
             var venta = (Venta)r.Tag;
+
+            if (venta.Estado != EstadoVenta.Proceso)
+            {
+                MessageBox.Show("No se puede cobrar una venta que no está en estado de proceso.", "Estado de Venta Incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             frmCobro frm = new frmCobro() { Text = "Seleccionar método de cobro" };
             frm.SetMonto(venta.Total);
             DialogResult dr = frm.ShowDialog(this);
+
             try
             {
                 venta.Estado = EstadoVenta.Pagada;
@@ -177,9 +185,10 @@ namespace VentaDeMiel2022.Windows
             {
                 HelperMensaje.Mensaje(TipoMensaje.Error, exception.Message, "Error");
             }
-
         }
 
-      
     }
+
+
 }
+

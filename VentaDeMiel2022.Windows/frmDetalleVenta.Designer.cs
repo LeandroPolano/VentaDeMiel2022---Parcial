@@ -37,17 +37,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CarritoDataGridView = new System.Windows.Forms.DataGridView();
-            this.TotalPanel = new System.Windows.Forms.Panel();
-            this.CantidadLabel = new System.Windows.Forms.Label();
-            this.TotalLabel = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.colEnvase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colVendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalPanel = new System.Windows.Forms.Panel();
+            this.CantidadLabel = new System.Windows.Forms.Label();
+            this.TotalLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -60,7 +60,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -92,7 +92,7 @@
             this.CancelarIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.CancelarIconButton.IconSize = 32;
             this.CancelarIconButton.Location = new System.Drawing.Point(893, 22);
-            this.CancelarIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelarIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.CancelarIconButton.Name = "CancelarIconButton";
             this.CancelarIconButton.Size = new System.Drawing.Size(161, 50);
             this.CancelarIconButton.TabIndex = 9;
@@ -181,7 +181,7 @@
             this.colSubTotal});
             this.CarritoDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CarritoDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.CarritoDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CarritoDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.CarritoDataGridView.MultiSelect = false;
             this.CarritoDataGridView.Name = "CarritoDataGridView";
             this.CarritoDataGridView.ReadOnly = true;
@@ -189,68 +189,6 @@
             this.CarritoDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.CarritoDataGridView.Size = new System.Drawing.Size(1067, 292);
             this.CarritoDataGridView.TabIndex = 5;
-            // 
-            // TotalPanel
-            // 
-            this.TotalPanel.BackColor = System.Drawing.Color.ForestGreen;
-            this.TotalPanel.Controls.Add(this.CantidadLabel);
-            this.TotalPanel.Controls.Add(this.TotalLabel);
-            this.TotalPanel.Controls.Add(this.label6);
-            this.TotalPanel.Controls.Add(this.label7);
-            this.TotalPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TotalPanel.Location = new System.Drawing.Point(0, 292);
-            this.TotalPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TotalPanel.Name = "TotalPanel";
-            this.TotalPanel.Size = new System.Drawing.Size(1067, 100);
-            this.TotalPanel.TabIndex = 4;
-            // 
-            // CantidadLabel
-            // 
-            this.CantidadLabel.AutoSize = true;
-            this.CantidadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CantidadLabel.ForeColor = System.Drawing.Color.White;
-            this.CantidadLabel.Location = new System.Drawing.Point(889, 32);
-            this.CantidadLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.CantidadLabel.Name = "CantidadLabel";
-            this.CantidadLabel.Size = new System.Drawing.Size(17, 18);
-            this.CantidadLabel.TabIndex = 0;
-            this.CantidadLabel.Text = "0";
-            // 
-            // TotalLabel
-            // 
-            this.TotalLabel.AutoSize = true;
-            this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.ForeColor = System.Drawing.Color.White;
-            this.TotalLabel.Location = new System.Drawing.Point(995, 32);
-            this.TotalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(17, 18);
-            this.TotalLabel.TabIndex = 0;
-            this.TotalLabel.Text = "$";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(803, 31);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 18);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Cantidad:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(929, 31);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 18);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Total:";
             // 
             // colEnvase
             // 
@@ -303,13 +241,74 @@
             this.colSubTotal.ReadOnly = true;
             this.colSubTotal.Width = 91;
             // 
+            // TotalPanel
+            // 
+            this.TotalPanel.BackColor = System.Drawing.Color.ForestGreen;
+            this.TotalPanel.Controls.Add(this.CantidadLabel);
+            this.TotalPanel.Controls.Add(this.TotalLabel);
+            this.TotalPanel.Controls.Add(this.label6);
+            this.TotalPanel.Controls.Add(this.label7);
+            this.TotalPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TotalPanel.Location = new System.Drawing.Point(0, 292);
+            this.TotalPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.TotalPanel.Name = "TotalPanel";
+            this.TotalPanel.Size = new System.Drawing.Size(1067, 100);
+            this.TotalPanel.TabIndex = 4;
+            // 
+            // CantidadLabel
+            // 
+            this.CantidadLabel.AutoSize = true;
+            this.CantidadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CantidadLabel.ForeColor = System.Drawing.Color.White;
+            this.CantidadLabel.Location = new System.Drawing.Point(889, 32);
+            this.CantidadLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CantidadLabel.Name = "CantidadLabel";
+            this.CantidadLabel.Size = new System.Drawing.Size(17, 18);
+            this.CantidadLabel.TabIndex = 0;
+            this.CantidadLabel.Text = "0";
+            // 
+            // TotalLabel
+            // 
+            this.TotalLabel.AutoSize = true;
+            this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLabel.ForeColor = System.Drawing.Color.White;
+            this.TotalLabel.Location = new System.Drawing.Point(995, 32);
+            this.TotalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TotalLabel.Name = "TotalLabel";
+            this.TotalLabel.Size = new System.Drawing.Size(17, 18);
+            this.TotalLabel.TabIndex = 0;
+            this.TotalLabel.Text = "$";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(803, 31);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 18);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Cantidad:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(929, 31);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 18);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Total:";
+            // 
             // frmDetalleVenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDetalleVenta";
             this.Text = "frmDetalleVenta";
             this.splitContainer1.Panel1.ResumeLayout(false);

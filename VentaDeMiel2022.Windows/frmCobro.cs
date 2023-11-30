@@ -55,6 +55,7 @@ namespace VentaDeMiel2022.Windows
             DialogResult dr = frm.ShowDialog(this);
             if (dr == DialogResult.Cancel)
             {
+                this.Close(); 
                 return;
             }
         }

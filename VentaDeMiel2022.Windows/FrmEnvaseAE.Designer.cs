@@ -56,7 +56,7 @@
             this.CancelarIconButton.IconColor = System.Drawing.Color.White;
             this.CancelarIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.CancelarIconButton.Location = new System.Drawing.Point(413, 261);
-            this.CancelarIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelarIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.CancelarIconButton.Name = "CancelarIconButton";
             this.CancelarIconButton.Size = new System.Drawing.Size(161, 73);
             this.CancelarIconButton.TabIndex = 7;
@@ -73,7 +73,7 @@
             this.OKIconButton.IconColor = System.Drawing.Color.White;
             this.OKIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.OKIconButton.Location = new System.Drawing.Point(83, 261);
-            this.OKIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OKIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.OKIconButton.Name = "OKIconButton";
             this.OKIconButton.Size = new System.Drawing.Size(161, 73);
             this.OKIconButton.TabIndex = 8;
@@ -85,7 +85,7 @@
             // EnvaseTextBox
             // 
             this.EnvaseTextBox.Location = new System.Drawing.Point(224, 48);
-            this.EnvaseTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EnvaseTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.EnvaseTextBox.MaxLength = 200;
             this.EnvaseTextBox.Name = "EnvaseTextBox";
             this.EnvaseTextBox.Size = new System.Drawing.Size(349, 22);
@@ -104,7 +104,7 @@
             // PrecioVtaTextBox
             // 
             this.PrecioVtaTextBox.Location = new System.Drawing.Point(224, 137);
-            this.PrecioVtaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PrecioVtaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PrecioVtaTextBox.MaxLength = 200;
             this.PrecioVtaTextBox.Name = "PrecioVtaTextBox";
             this.PrecioVtaTextBox.Size = new System.Drawing.Size(349, 22);
@@ -125,7 +125,7 @@
             this.TipoEnvasesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TipoEnvasesComboBox.FormattingEnabled = true;
             this.TipoEnvasesComboBox.Location = new System.Drawing.Point(224, 94);
-            this.TipoEnvasesComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TipoEnvasesComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.TipoEnvasesComboBox.Name = "TipoEnvasesComboBox";
             this.TipoEnvasesComboBox.Size = new System.Drawing.Size(349, 24);
             this.TipoEnvasesComboBox.TabIndex = 11;
@@ -153,7 +153,7 @@
             // StockNumericUpDown
             // 
             this.StockNumericUpDown.Location = new System.Drawing.Point(224, 187);
-            this.StockNumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StockNumericUpDown.Margin = new System.Windows.Forms.Padding(4);
             this.StockNumericUpDown.Maximum = new decimal(new int[] {
             150,
             0,
@@ -180,7 +180,7 @@
             // ImagenPictureBox
             // 
             this.ImagenPictureBox.Location = new System.Drawing.Point(673, 48);
-            this.ImagenPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ImagenPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.ImagenPictureBox.Name = "ImagenPictureBox";
             this.ImagenPictureBox.Size = new System.Drawing.Size(141, 112);
             this.ImagenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -196,7 +196,7 @@
             this.BuscarIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BuscarIconButton.IconSize = 32;
             this.BuscarIconButton.Location = new System.Drawing.Point(653, 167);
-            this.BuscarIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BuscarIconButton.Margin = new System.Windows.Forms.Padding(4);
             this.BuscarIconButton.Name = "BuscarIconButton";
             this.BuscarIconButton.Size = new System.Drawing.Size(179, 44);
             this.BuscarIconButton.TabIndex = 7;
@@ -211,8 +211,7 @@
             // 
             // FrmEnvaseAE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(849, 356);
             this.ControlBox = false;
             this.Controls.Add(this.ImagenPictureBox);
@@ -227,7 +226,7 @@
             this.Controls.Add(this.BuscarIconButton);
             this.Controls.Add(this.CancelarIconButton);
             this.Controls.Add(this.OKIconButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(867, 403);
             this.MinimumSize = new System.Drawing.Size(867, 403);
             this.Name = "FrmEnvaseAE";

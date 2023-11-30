@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.CancelarIconButton = new FontAwesome.Sharp.IconButton();
             this.CantidadLabel = new System.Windows.Forms.Label();
@@ -37,23 +38,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.TotalPanel = new System.Windows.Forms.Panel();
             this.CarritoPanel = new System.Windows.Forms.Panel();
+            this.CerrarButton = new FontAwesome.Sharp.IconButton();
             this.CarritoDataGridView = new System.Windows.Forms.DataGridView();
-            this.TipoEnvasesComboBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.EnvaseFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.TipoProductosPanel = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.VendedoresComboBox = new System.Windows.Forms.ComboBox();
-            this.ClientesComboBox = new System.Windows.Forms.ComboBox();
             this.colEnvase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAgregar = new System.Windows.Forms.DataGridViewImageColumn();
             this.colQuitar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.CerrarButton = new FontAwesome.Sharp.IconButton();
+            this.TipoEnvasesComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.EnvaseFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.TipoProductosPanel = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ClientesComboBox = new System.Windows.Forms.ComboBox();
+            this.VendedoresComboBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.TotalPanel.SuspendLayout();
             this.CarritoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CarritoDataGridView)).BeginInit();
@@ -62,6 +64,7 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -188,6 +191,22 @@
             this.CarritoPanel.Size = new System.Drawing.Size(602, 91);
             this.CarritoPanel.TabIndex = 0;
             // 
+            // CerrarButton
+            // 
+            this.CerrarButton.BackColor = System.Drawing.Color.Transparent;
+            this.CerrarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CerrarButton.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            this.CerrarButton.IconColor = System.Drawing.Color.Red;
+            this.CerrarButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.CerrarButton.Location = new System.Drawing.Point(543, 0);
+            this.CerrarButton.Margin = new System.Windows.Forms.Padding(4);
+            this.CerrarButton.Name = "CerrarButton";
+            this.CerrarButton.Size = new System.Drawing.Size(59, 59);
+            this.CerrarButton.TabIndex = 12;
+            this.CerrarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.CerrarButton.UseVisualStyleBackColor = false;
+            this.CerrarButton.Click += new System.EventHandler(this.CerrarButton_Click);
+            // 
             // CarritoDataGridView
             // 
             this.CarritoDataGridView.AllowUserToAddRows = false;
@@ -211,6 +230,57 @@
             this.CarritoDataGridView.Size = new System.Drawing.Size(602, 259);
             this.CarritoDataGridView.TabIndex = 2;
             this.CarritoDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CarritoDataGridView_CellContentClick);
+            // 
+            // colEnvase
+            // 
+            this.colEnvase.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colEnvase.HeaderText = "Envase";
+            this.colEnvase.MinimumWidth = 6;
+            this.colEnvase.Name = "colEnvase";
+            this.colEnvase.ReadOnly = true;
+            // 
+            // colPrecio
+            // 
+            this.colPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colPrecio.HeaderText = "Precio";
+            this.colPrecio.MinimumWidth = 6;
+            this.colPrecio.Name = "colPrecio";
+            this.colPrecio.ReadOnly = true;
+            this.colPrecio.Width = 75;
+            // 
+            // colCantidad
+            // 
+            this.colCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colCantidad.HeaderText = "Cant.";
+            this.colCantidad.MinimumWidth = 6;
+            this.colCantidad.Name = "colCantidad";
+            this.colCantidad.ReadOnly = true;
+            this.colCantidad.Width = 66;
+            // 
+            // colSubTotal
+            // 
+            this.colSubTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colSubTotal.HeaderText = "SubTot.";
+            this.colSubTotal.MinimumWidth = 6;
+            this.colSubTotal.Name = "colSubTotal";
+            this.colSubTotal.ReadOnly = true;
+            this.colSubTotal.Width = 83;
+            // 
+            // colAgregar
+            // 
+            this.colAgregar.HeaderText = "";
+            this.colAgregar.MinimumWidth = 6;
+            this.colAgregar.Name = "colAgregar";
+            this.colAgregar.ReadOnly = true;
+            this.colAgregar.Width = 20;
+            // 
+            // colQuitar
+            // 
+            this.colQuitar.HeaderText = "";
+            this.colQuitar.MinimumWidth = 6;
+            this.colQuitar.Name = "colQuitar";
+            this.colQuitar.ReadOnly = true;
+            this.colQuitar.Width = 20;
             // 
             // TipoEnvasesComboBox
             // 
@@ -273,6 +343,28 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Cliente:";
             // 
+            // ClientesComboBox
+            // 
+            this.ClientesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ClientesComboBox.FormattingEnabled = true;
+            this.ClientesComboBox.Location = new System.Drawing.Point(141, 40);
+            this.ClientesComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientesComboBox.Name = "ClientesComboBox";
+            this.ClientesComboBox.Size = new System.Drawing.Size(273, 24);
+            this.ClientesComboBox.TabIndex = 5;
+            //this.ClientesComboBox.SelectedIndexChanged += new System.EventHandler(this.ClientesComboBox_SelectedIndexChanged);
+            // 
+            // VendedoresComboBox
+            // 
+            this.VendedoresComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.VendedoresComboBox.FormattingEnabled = true;
+            this.VendedoresComboBox.Location = new System.Drawing.Point(549, 8);
+            this.VendedoresComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.VendedoresComboBox.Name = "VendedoresComboBox";
+            this.VendedoresComboBox.Size = new System.Drawing.Size(273, 24);
+            this.VendedoresComboBox.TabIndex = 3;
+            //this.VendedoresComboBox.SelectedIndexChanged += new System.EventHandler(this.VendedoresComboBox_SelectedIndexChanged);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -307,99 +399,13 @@
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
-            // VendedoresComboBox
+            // errorProvider3
             // 
-            this.VendedoresComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.VendedoresComboBox.FormattingEnabled = true;
-            this.VendedoresComboBox.Location = new System.Drawing.Point(549, 8);
-            this.VendedoresComboBox.Margin = new System.Windows.Forms.Padding(4);
-            this.VendedoresComboBox.Name = "VendedoresComboBox";
-            this.VendedoresComboBox.Size = new System.Drawing.Size(273, 24);
-            this.VendedoresComboBox.TabIndex = 3;
-            this.VendedoresComboBox.SelectedIndexChanged += new System.EventHandler(this.VendedoresComboBox_SelectedIndexChanged);
-            // 
-            // ClientesComboBox
-            // 
-            this.ClientesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ClientesComboBox.FormattingEnabled = true;
-            this.ClientesComboBox.Location = new System.Drawing.Point(141, 40);
-            this.ClientesComboBox.Margin = new System.Windows.Forms.Padding(4);
-            this.ClientesComboBox.Name = "ClientesComboBox";
-            this.ClientesComboBox.Size = new System.Drawing.Size(273, 24);
-            this.ClientesComboBox.TabIndex = 5;
-            this.ClientesComboBox.SelectedIndexChanged += new System.EventHandler(this.ClientesComboBox_SelectedIndexChanged);
-            // 
-            // colEnvase
-            // 
-            this.colEnvase.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colEnvase.HeaderText = "Envase";
-            this.colEnvase.MinimumWidth = 6;
-            this.colEnvase.Name = "colEnvase";
-            this.colEnvase.ReadOnly = true;
-            // 
-            // colPrecio
-            // 
-            this.colPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colPrecio.HeaderText = "Precio";
-            this.colPrecio.MinimumWidth = 6;
-            this.colPrecio.Name = "colPrecio";
-            this.colPrecio.ReadOnly = true;
-            this.colPrecio.Width = 75;
-            // 
-            // colCantidad
-            // 
-            this.colCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colCantidad.HeaderText = "Cant.";
-            this.colCantidad.MinimumWidth = 6;
-            this.colCantidad.Name = "colCantidad";
-            this.colCantidad.ReadOnly = true;
-            this.colCantidad.Width = 66;
-            // 
-            // colSubTotal
-            // 
-            this.colSubTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colSubTotal.HeaderText = "SubTot.";
-            this.colSubTotal.MinimumWidth = 6;
-            this.colSubTotal.Name = "colSubTotal";
-            this.colSubTotal.ReadOnly = true;
-            this.colSubTotal.Width = 83;
-            // 
-            // colAgregar
-            // 
-            this.colAgregar.HeaderText = "";
-            this.colAgregar.MinimumWidth = 6;
-            this.colAgregar.Name = "colAgregar";
-            this.colAgregar.ReadOnly = true;
-            this.colAgregar.Width = 20;
-            // 
-            // colQuitar
-            // 
-            this.colQuitar.HeaderText = "";
-            this.colQuitar.MinimumWidth = 6;
-            this.colQuitar.Name = "colQuitar";
-            this.colQuitar.ReadOnly = true;
-            this.colQuitar.Width = 20;
-            // 
-            // CerrarButton
-            // 
-            this.CerrarButton.BackColor = System.Drawing.Color.Transparent;
-            this.CerrarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CerrarButton.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.CerrarButton.IconColor = System.Drawing.Color.Red;
-            this.CerrarButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.CerrarButton.Location = new System.Drawing.Point(543, 0);
-            this.CerrarButton.Margin = new System.Windows.Forms.Padding(4);
-            this.CerrarButton.Name = "CerrarButton";
-            this.CerrarButton.Size = new System.Drawing.Size(59, 59);
-            this.CerrarButton.TabIndex = 12;
-            this.CerrarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.CerrarButton.UseVisualStyleBackColor = false;
-            this.CerrarButton.Click += new System.EventHandler(this.CerrarButton_Click);
+            this.errorProvider3.ContainerControl = this;
             // 
             // frmVentasAE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1444, 450);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
@@ -417,6 +423,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -449,5 +456,7 @@
         private System.Windows.Forms.ComboBox ClientesComboBox;
         private System.Windows.Forms.ComboBox VendedoresComboBox;
         private FontAwesome.Sharp.IconButton CerrarButton;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
     }
 }

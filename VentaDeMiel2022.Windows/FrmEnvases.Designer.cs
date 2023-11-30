@@ -59,6 +59,7 @@ namespace VentaDeMiel2022.Windows
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -77,8 +78,9 @@ namespace VentaDeMiel2022.Windows
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.DatosDataGridView);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 80;
+            this.splitContainer1.Size = new System.Drawing.Size(1067, 554);
+            this.splitContainer1.SplitterDistance = 98;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 2;
             // 
             // PrecioDescIconButton
@@ -88,9 +90,10 @@ namespace VentaDeMiel2022.Windows
             this.PrecioDescIconButton.IconChar = FontAwesome.Sharp.IconChar.SortNumericDesc;
             this.PrecioDescIconButton.IconColor = System.Drawing.Color.DodgerBlue;
             this.PrecioDescIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.PrecioDescIconButton.Location = new System.Drawing.Point(548, 12);
+            this.PrecioDescIconButton.Location = new System.Drawing.Point(731, 15);
+            this.PrecioDescIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PrecioDescIconButton.Name = "PrecioDescIconButton";
-            this.PrecioDescIconButton.Size = new System.Drawing.Size(57, 63);
+            this.PrecioDescIconButton.Size = new System.Drawing.Size(76, 78);
             this.PrecioDescIconButton.TabIndex = 1;
             this.PrecioDescIconButton.Text = " Asc";
             this.PrecioDescIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -104,9 +107,10 @@ namespace VentaDeMiel2022.Windows
             this.OrdenarPrecioAsciIconButton.IconChar = FontAwesome.Sharp.IconChar.ArrowDown19;
             this.OrdenarPrecioAsciIconButton.IconColor = System.Drawing.Color.DodgerBlue;
             this.OrdenarPrecioAsciIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.OrdenarPrecioAsciIconButton.Location = new System.Drawing.Point(485, 12);
+            this.OrdenarPrecioAsciIconButton.Location = new System.Drawing.Point(647, 15);
+            this.OrdenarPrecioAsciIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrdenarPrecioAsciIconButton.Name = "OrdenarPrecioAsciIconButton";
-            this.OrdenarPrecioAsciIconButton.Size = new System.Drawing.Size(57, 63);
+            this.OrdenarPrecioAsciIconButton.Size = new System.Drawing.Size(76, 78);
             this.OrdenarPrecioAsciIconButton.TabIndex = 2;
             this.OrdenarPrecioAsciIconButton.Text = " Asc";
             this.OrdenarPrecioAsciIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -120,9 +124,10 @@ namespace VentaDeMiel2022.Windows
             this.OrdenarZAPorEnvaseiconButton.IconChar = FontAwesome.Sharp.IconChar.SortAlphaDesc;
             this.OrdenarZAPorEnvaseiconButton.IconColor = System.Drawing.Color.DodgerBlue;
             this.OrdenarZAPorEnvaseiconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.OrdenarZAPorEnvaseiconButton.Location = new System.Drawing.Point(421, 12);
+            this.OrdenarZAPorEnvaseiconButton.Location = new System.Drawing.Point(561, 15);
+            this.OrdenarZAPorEnvaseiconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrdenarZAPorEnvaseiconButton.Name = "OrdenarZAPorEnvaseiconButton";
-            this.OrdenarZAPorEnvaseiconButton.Size = new System.Drawing.Size(58, 63);
+            this.OrdenarZAPorEnvaseiconButton.Size = new System.Drawing.Size(77, 78);
             this.OrdenarZAPorEnvaseiconButton.TabIndex = 3;
             this.OrdenarZAPorEnvaseiconButton.Text = "Alfa Z-A";
             this.OrdenarZAPorEnvaseiconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -136,9 +141,10 @@ namespace VentaDeMiel2022.Windows
             this.OredenarAZPorEnvaseiconButton.IconChar = FontAwesome.Sharp.IconChar.SortAlphaDown;
             this.OredenarAZPorEnvaseiconButton.IconColor = System.Drawing.Color.DodgerBlue;
             this.OredenarAZPorEnvaseiconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.OredenarAZPorEnvaseiconButton.Location = new System.Drawing.Point(357, 12);
+            this.OredenarAZPorEnvaseiconButton.Location = new System.Drawing.Point(476, 15);
+            this.OredenarAZPorEnvaseiconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OredenarAZPorEnvaseiconButton.Name = "OredenarAZPorEnvaseiconButton";
-            this.OredenarAZPorEnvaseiconButton.Size = new System.Drawing.Size(58, 63);
+            this.OredenarAZPorEnvaseiconButton.Size = new System.Drawing.Size(77, 78);
             this.OredenarAZPorEnvaseiconButton.TabIndex = 4;
             this.OredenarAZPorEnvaseiconButton.Text = "Alfa A-Z";
             this.OredenarAZPorEnvaseiconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -152,9 +158,10 @@ namespace VentaDeMiel2022.Windows
             this.CerrarIconButton.IconChar = FontAwesome.Sharp.IconChar.Ban;
             this.CerrarIconButton.IconColor = System.Drawing.Color.Red;
             this.CerrarIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.CerrarIconButton.Location = new System.Drawing.Point(726, 12);
+            this.CerrarIconButton.Location = new System.Drawing.Point(968, 15);
+            this.CerrarIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CerrarIconButton.Name = "CerrarIconButton";
-            this.CerrarIconButton.Size = new System.Drawing.Size(62, 63);
+            this.CerrarIconButton.Size = new System.Drawing.Size(83, 78);
             this.CerrarIconButton.TabIndex = 0;
             this.CerrarIconButton.Text = "Cerrar";
             this.CerrarIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -168,9 +175,10 @@ namespace VentaDeMiel2022.Windows
             this.FiltrariconButton.IconChar = FontAwesome.Sharp.IconChar.Filter;
             this.FiltrariconButton.IconColor = System.Drawing.Color.Blue;
             this.FiltrariconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.FiltrariconButton.Location = new System.Drawing.Point(250, 12);
+            this.FiltrariconButton.Location = new System.Drawing.Point(333, 15);
+            this.FiltrariconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FiltrariconButton.Name = "FiltrariconButton";
-            this.FiltrariconButton.Size = new System.Drawing.Size(62, 63);
+            this.FiltrariconButton.Size = new System.Drawing.Size(83, 78);
             this.FiltrariconButton.TabIndex = 0;
             this.FiltrariconButton.Text = "Filtrar";
             this.FiltrariconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -184,9 +192,10 @@ namespace VentaDeMiel2022.Windows
             this.EditarIconButton.IconChar = FontAwesome.Sharp.IconChar.Pen;
             this.EditarIconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.EditarIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.EditarIconButton.Location = new System.Drawing.Point(153, 12);
+            this.EditarIconButton.Location = new System.Drawing.Point(204, 15);
+            this.EditarIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EditarIconButton.Name = "EditarIconButton";
-            this.EditarIconButton.Size = new System.Drawing.Size(62, 63);
+            this.EditarIconButton.Size = new System.Drawing.Size(83, 78);
             this.EditarIconButton.TabIndex = 0;
             this.EditarIconButton.Text = "Editar";
             this.EditarIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -200,9 +209,10 @@ namespace VentaDeMiel2022.Windows
             this.BorrarIconButton.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.BorrarIconButton.IconColor = System.Drawing.Color.Red;
             this.BorrarIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BorrarIconButton.Location = new System.Drawing.Point(85, 12);
+            this.BorrarIconButton.Location = new System.Drawing.Point(113, 15);
+            this.BorrarIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BorrarIconButton.Name = "BorrarIconButton";
-            this.BorrarIconButton.Size = new System.Drawing.Size(62, 63);
+            this.BorrarIconButton.Size = new System.Drawing.Size(83, 78);
             this.BorrarIconButton.TabIndex = 0;
             this.BorrarIconButton.Text = "Borrar";
             this.BorrarIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -216,9 +226,10 @@ namespace VentaDeMiel2022.Windows
             this.NuevoIconButton.IconChar = FontAwesome.Sharp.IconChar.File;
             this.NuevoIconButton.IconColor = System.Drawing.Color.LimeGreen;
             this.NuevoIconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.NuevoIconButton.Location = new System.Drawing.Point(17, 12);
+            this.NuevoIconButton.Location = new System.Drawing.Point(23, 15);
+            this.NuevoIconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NuevoIconButton.Name = "NuevoIconButton";
-            this.NuevoIconButton.Size = new System.Drawing.Size(62, 63);
+            this.NuevoIconButton.Size = new System.Drawing.Size(83, 78);
             this.NuevoIconButton.TabIndex = 0;
             this.NuevoIconButton.Text = "Nuevo";
             this.NuevoIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -248,19 +259,22 @@ namespace VentaDeMiel2022.Windows
             this.colStock});
             this.DatosDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DatosDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.DatosDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DatosDataGridView.MultiSelect = false;
             this.DatosDataGridView.Name = "DatosDataGridView";
             this.DatosDataGridView.ReadOnly = true;
+            this.DatosDataGridView.RowHeadersWidth = 51;
             this.DatosDataGridView.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DatosDataGridView.RowTemplate.Height = 28;
             this.DatosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DatosDataGridView.Size = new System.Drawing.Size(800, 366);
+            this.DatosDataGridView.Size = new System.Drawing.Size(1067, 451);
             this.DatosDataGridView.TabIndex = 0;
             // 
             // colEnvase
             // 
             this.colEnvase.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colEnvase.HeaderText = "Envase";
+            this.colEnvase.MinimumWidth = 6;
             this.colEnvase.Name = "colEnvase";
             this.colEnvase.ReadOnly = true;
             // 
@@ -268,6 +282,7 @@ namespace VentaDeMiel2022.Windows
             // 
             this.colTipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colTipo.HeaderText = "Tipo de Envase";
+            this.colTipo.MinimumWidth = 6;
             this.colTipo.Name = "colTipo";
             this.colTipo.ReadOnly = true;
             this.colTipo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -278,9 +293,10 @@ namespace VentaDeMiel2022.Windows
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.colPrecio.DefaultCellStyle = dataGridViewCellStyle3;
             this.colPrecio.HeaderText = "Precio";
+            this.colPrecio.MinimumWidth = 6;
             this.colPrecio.Name = "colPrecio";
             this.colPrecio.ReadOnly = true;
-            this.colPrecio.Width = 77;
+            this.colPrecio.Width = 90;
             // 
             // colStock
             // 
@@ -288,16 +304,17 @@ namespace VentaDeMiel2022.Windows
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.colStock.DefaultCellStyle = dataGridViewCellStyle4;
             this.colStock.HeaderText = "Stock";
+            this.colStock.MinimumWidth = 6;
             this.colStock.Name = "colStock";
             this.colStock.ReadOnly = true;
-            this.colStock.Width = 71;
+            this.colStock.Width = 85;
             // 
             // FrmEnvases
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmEnvases";
             this.Text = "frmEnvases";
             this.Load += new System.EventHandler(this.frmEnvases_Load);

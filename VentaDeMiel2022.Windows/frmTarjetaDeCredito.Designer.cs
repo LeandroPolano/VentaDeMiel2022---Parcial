@@ -73,6 +73,7 @@
             this.OKIconButton.Text = "Guardar";
             this.OKIconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.OKIconButton.UseVisualStyleBackColor = false;
+            this.OKIconButton.Click += new System.EventHandler(this.OKIconButton_Click);
             // 
             // pictureBox1
             // 
@@ -161,8 +162,7 @@
             // 
             // frmTarjetaDeCredito
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(734, 407);
             this.Controls.Add(this.CancelarIconButton);
             this.Controls.Add(this.OKIconButton);
