@@ -149,14 +149,16 @@ namespace VentaDeMiel2022.Windows
         private Provincia provincia = null;
         private void ProvinciaComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ProvinciaComboBox.SelectedIndex!=0)
+            if (ProvinciaComboBox.SelectedIndex != 0)
             {
                 provincia = (Provincia)ProvinciaComboBox.SelectedItem;
                 HelperCombos.CargarDatosComboLocalidad(ref LocalidadComboBox, provincia);
+                LocalidadComboBox.Enabled = true; // Habilitar ComboBox de Localidad
             }
             else
             {
                 LocalidadComboBox.DataSource = null;
+                LocalidadComboBox.Enabled = false; // Deshabilitar ComboBox de Localidad
                 provincia = null;
             }
         }
@@ -168,11 +170,16 @@ namespace VentaDeMiel2022.Windows
             {
                 pais = (Pais)PaisComboBox.SelectedItem;
                 HelperCombos.CargarDatosComboProvincia(ref ProvinciaComboBox, pais);
+                ProvinciaComboBox.Enabled = true; // Habilitar ComboBox de Provincia
 
+                // Limpiar ComboBox de Localidad
+                LocalidadComboBox.DataSource = null;
+                provincia = null;
             }
             else
             {
                 ProvinciaComboBox.DataSource = null;
+                ProvinciaComboBox.Enabled = false; // Deshabilitar ComboBox de Provincia
                 pais = null;
             }
         }

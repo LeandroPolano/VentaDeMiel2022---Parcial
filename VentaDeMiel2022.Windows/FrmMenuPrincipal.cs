@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +20,66 @@ namespace VentaDeMiel2022.Windows
         public FrmMenuPrincipal()
         {
             InitializeComponent();
+            PanelUbicaciones.Visible = false;
+            panelPersonas.Visible = false;
+            PanelEnvasesGeneral.Visible = false;
         }
+
+      
+        private void HideSubMenu()
+        {
+            PanelUbicaciones.Visible = false;
+            panelPersonas.Visible = false;
+            PanelEnvasesGeneral.Visible = false;
+
+        }
+
+
+        private void EnvasesGeneralesButton_Click(object sender, EventArgs e)
+        {
+            if (PanelEnvasesGeneral.Visible == false)
+            {
+                PanelEnvasesGeneral.Visible = true;
+
+            }
+            else
+            {
+                PanelEnvasesGeneral.Visible = false;
+
+            }
+        }
+
+        private void UbicacionesButton_Click(object sender, EventArgs e)
+        {
+            if (PanelUbicaciones.Visible == false )
+            {
+                PanelUbicaciones.Visible = true;
+            }
+            else
+            {
+                PanelUbicaciones.Visible = false;
+            }
+
+
+
+        }
+
+        private void PersonasButton_Click(object sender, EventArgs e)
+        {
+            if (panelPersonas.Visible ==false)
+            {
+                panelPersonas.Visible = true;
+
+            }
+            else
+            {
+                panelPersonas.Visible = false;
+
+            }
+        }
+
+
+
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -96,5 +157,7 @@ namespace VentaDeMiel2022.Windows
             FrmEnvases frm = new FrmEnvases(DI.Create<IServicioEnvases>()) { /*Text = "Envases"*/ };
             DialogResult dr = frm.ShowDialog(this);
         }
+
+       
     }
 }
