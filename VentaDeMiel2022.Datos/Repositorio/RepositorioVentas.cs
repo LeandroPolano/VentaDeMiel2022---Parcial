@@ -45,12 +45,31 @@ namespace VentaDeMiel2022.Datos.Repositorios
         {
             try
             {
-                context.Entry(venta).State = EntityState.Modified;
+                var existingEntity = context.Ventas.Find(venta.VentaId);
+                if (existingEntity != null)
+                {
+                    context.Entry(existingEntity).CurrentValues.SetValues(venta);
+                    context.SaveChanges();
+                }
+                else
+                {
+                    throw new InvalidOperationException("La entidad no existe en la base de datos.");
+                }
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
+
+            //try
+            //{
+            //    context.Entry(venta).State = EntityState.Modified;
+            //    //context.SaveChanges();
+            //}
+            //catch (Exception e)
+            //{
+            //    throw new Exception(e.Message);
+            //}
         }
     }
 }

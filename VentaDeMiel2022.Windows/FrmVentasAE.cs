@@ -25,6 +25,7 @@ namespace VentaDeMiel2022.Windows
 
         public frmVentasAE(IServicioEnvases servicioEnvase, IServicioClientes servicioCliente, IServicioVendedor servicioVendedor)
         {
+            
             InitializeComponent();
             this.servicioEnvase = servicioEnvase;
             this.servicioCliente = servicioCliente;
@@ -185,7 +186,7 @@ namespace VentaDeMiel2022.Windows
 
         private void OKIconButton_Click(object sender, EventArgs e)
         {
-            if (ValidarDatos());
+            if (ValidarDatos())
             {
 
 
@@ -211,6 +212,7 @@ namespace VentaDeMiel2022.Windows
                 ActualizarTotales(0, 0);
 
             }
+
         }
 
         private bool ValidarDatos()

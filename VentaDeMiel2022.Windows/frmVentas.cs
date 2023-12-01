@@ -23,7 +23,9 @@ namespace VentaDeMiel2022.Windows
         {
             InitializeComponent();
             this.servicio = servicio;
-            
+            DatosDataGridView.ClearSelection();
+            DatosDataGridView.Refresh();
+
         }
 
         private IServicioVentas servicio;
@@ -61,10 +63,13 @@ namespace VentaDeMiel2022.Windows
             {
                 HelperMensaje.Mensaje(TipoMensaje.Error, exception.Message, "Error");
             }
+            DatosDataGridView.ClearSelection(); 
+            DatosDataGridView.Refresh();
         }
 
         private void frmVentas_Load(object sender, EventArgs e)
         {
+
             //try
             //{
             //    lista = servicio.GetVentas();
@@ -103,6 +108,8 @@ namespace VentaDeMiel2022.Windows
             {
                 HelperMensaje.Mensaje(TipoMensaje.Error, exception.Message, "Error");
             }
+            DatosDataGridView.ClearSelection();
+
         }
 
         private void AnularIconButton_Click(object sender, EventArgs e)
@@ -125,11 +132,13 @@ namespace VentaDeMiel2022.Windows
                 servicio.CambiarEstado(venta);
                 HelperGrid.SetearFila(r, venta);
                 HelperMensaje.Mensaje(TipoMensaje.OK, "Venta anulada!!!", "Mensaje");
+                
             }
             catch (Exception exception)
             {
                 HelperMensaje.Mensaje(TipoMensaje.Error, exception.Message, "Error");
             }
+            
         }
 
         private void DetalleIconButton_Click(object sender, EventArgs e)
@@ -152,6 +161,8 @@ namespace VentaDeMiel2022.Windows
             {
                 HelperMensaje.Mensaje(TipoMensaje.Error, ex.Message, "Error");
             }
+            DatosDataGridView.ClearSelection();
+            DatosDataGridView.Refresh();
         }
 
         private void CobrarIconButton_Click(object sender, EventArgs e)
@@ -185,6 +196,8 @@ namespace VentaDeMiel2022.Windows
             {
                 HelperMensaje.Mensaje(TipoMensaje.Error, exception.Message, "Error");
             }
+            DatosDataGridView.ClearSelection();
+            DatosDataGridView.Refresh();
         }
 
     }
